@@ -6,3 +6,8 @@ const example = () => {
 };
 
 window.example = example;
+
+const pokemonTypeGrass = POKEMON.filter(function(POKEMON){
+  return POKEMON.type === "Grass";
+})
+console.log(pokemonTypeGrass);
