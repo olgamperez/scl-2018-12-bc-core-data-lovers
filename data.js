@@ -1,22 +1,26 @@
-//Todo lo que es filtrar ,
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+/*Todo lo que es filtrar ,
+esta es una función de ejemplo
+puedes ver como agregamos la función a nuestro objeto global window;*/
+//window.example= example;
 
-const example = () => {
-  return 'example';
+const dataPokemon = POKEMON.pokemon;
+  let namesPokemon = []
+  for (let i=0; i<dataPokemon.length; i++) {
+  namesPokemon.push(dataPokemon[i].name)
 };
+//console.log(namesPokemon);
 
-window.example = example;
+let result = namesPokemon.filter(Bulbasaur1 => Bulbasaur1 === "Pikachu");
+console.log(String(result));
 
 
-//for (let i=0; i<data.length; i++){ console.log(data[i])} muestra lo que tengo dentro de cada objeto
-//for (let i=0; i<data.length; i++){ console.log(data[i].name)} muestra solo los nombres de cada objeto
-//for (let i=0; i<data.length; i++){ console.log(data[i]["name"])}
-//for (let i=0; i<data.length; i++){ console.log(data[i].type)} arroja los tipos de objetos
- /*let nombres = [];
-  for (let i=0; i<data.length; i++){
-    nombres.push(data[i].name)
-  }
-  console.log(nombres) me arroja un array con los nombres*/
+
+  //console.log(nombres) me arroja un array con los nombres*/
   // Para acceder a la imagen  POKEMON.pokemon[1].img
 
+ /* const dataPokemon = POKEMON.pokemon;
+  let namesPokemon = []
+  for (let i=0; i<dataPokemon.length; i++){
+  namesPokemon.push(dataPokemon[i].name)
+}
+document.write(namesPokemon)*/
