@@ -4,9 +4,17 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <button id="btn">Click me</button>
+      <p>Ordenar por: </p>
+      <select id="option-order">
+        <option value="az">Ordenar de A-Z</option> 
+        <option value="za">Ordenar de Z-A</option>
+        <option value="small-big">Ordenar por número inferior </option>
+        <option value="big-small">Ordenar por número superior</option>
+      </select>
+
     <div id="root"></div>
 
     <script src="./data/pokemon/pokemon.js"></script>
