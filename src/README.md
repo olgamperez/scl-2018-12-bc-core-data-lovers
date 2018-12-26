@@ -26,6 +26,10 @@ Definición de terminado:
 -  Visualizar más de 100 pokemones en forma general con su respectiva imagen, nombre y número.
 - Seleccionar la imagen de un pokemon podrá acceder a información más detallada.
 
+### Flujo de interacción:
+
+![Vizualización](vizualizar.png)
+
 ## Caso # 2: (Filtrar información)
 
 - José es un jugador habitual de Pokemon Go. Para el próximo fin de mes él y sus amigos pondrán a prueba sus habilidades en una batalla. José sabe que en los combates no se trata solo de tener el pokemón más fuerte, también debe conocer las características de cada uno y saber como contraatacar. Su contrincante posee algunos pokemones del tipo fuego por lo que desea verlos agrupados en un solo bloque para estudiarlos a fondo.
@@ -39,6 +43,10 @@ Definición de terminado:
 - Una herramienta que permita filtrar por tipo.
 - Filtrar por número.
 - Filtrar por nombre.
+
+### Flujo de interacción:
+
+![Flujo para filtrar la información](filtrar.png)
 
 ## Caso # 3 (Ordenar información)
 
@@ -57,6 +65,10 @@ Definición de terminado:
 -  Pueda ordenar los pokemon por número de mayor a menor.
 -  Pueda ordenar los pokemon por número de menor a mayor.
 
+### Flujo de interacción:
+
+![Flujo para ordenar la información](ordenar.png)
+
 ## Caso # 4: (Cálculos)
 
 - Juana es una chica fitness y últimamente se ha vuelto una aficionada al juego pokemonGo ya que descubrió la forma de entrenar y avanzar en el juego, pero desea conocer cuanto kilómetros necesita recorrer diarios para evolucionar a su pokemon preferido. 
@@ -73,6 +85,9 @@ Definición de terminado:
 - Calcular en cuantos kilometros evoluciona mi pokemon
 - Calcular en cuantos candys evoluciona mi pokemon
 
+### Flujo de interacción:
+
+![Flujo para realizar el calculo](calcular.png)
 
 ## Caso # 5: (Busqueda) (Opcional)
 
