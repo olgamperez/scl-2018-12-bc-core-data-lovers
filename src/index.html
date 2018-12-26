@@ -3,16 +3,94 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <script src="./data/pokemon/pokemon.js"></script>
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
 
+    <div class="navbar-fixed">
+        <nav class="grey">
+            <div class="nav-wrapper container">
+              <a href="#" class="brand-logo">POKEMON</a>
+              <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="sidenav" id="menu-responsive">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="https://www.google.cl/webhp?ie=UTF-8&rct=j">Eventos</a></li>
+                  <li><a href="#">Calculadora</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="https://www.google.cl/webhp?ie=UTF-8&rct=j">Eventos</a></li>
+                  <li><a href="#">Calculadora</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="principal-img">
+      <img id="initial-image" class="responsive-img" src="IMG/pokemon2.jpg" alt="Ash junto a Pikachu y otros pokemones populares">
+    </div>
+  <body>
+
+    <div class="container">
+        <div id="introduction">
+          <blockquote>
+            <p>En esta página podrás encontrar información y características de 
+            los 151 pokemones pertenecientes a la región de Kanto
+            </p>
+          </blockquote>
+        </div>
+      <div class="row">
+      <div id="select-pokemon" class="col s8 m6">
+        <select id="select-type-pokemon">
+            <option value="">Elige Tipo de Pokemon</option>
+            <option value="Ground">Tierra</option>
+            <option value="Water">Agua</option>
+            <option value="Fire">Fuego</option>
+            <option value="Normal">Normal</option>
+            <option value="Psychic">Psiquico</option>
+            <option value="Dragon">Dragón</option>
+            <option value="Flying">Volador</option>
+            <option value="Electric">Eléctrico</option>
+            <option value="Ice">Hielo</option>
+            <option value="Rock">Roca</option>
+            <option value="Bug">Bicho</option>
+            <option value="Grass">Planta</option>
+            <option value="Poison">Veneno</option>
+            <option value="Fighting">Lucha</option>
+            <option value="Ghost">Fantasma</option>
+            <option value="Dark">siniestro</option>
+            <option value="Steel">Acero</option>
+            <option value="Fairy">Hada</option>
+        </select>
+      </div>
+      <div id="select-type-order" class="col s4 m6">
+          <select id="select-order">
+              <option value="">Ordenar</option>
+              <option value="az">A - Z</option>
+              <option value="za">Z - A</option>
+          </select>
+        </div>
+      </div>  
+      <br>
+      </div>
+      <div class="container my-5 text-center">
+      <div class="mt-5">
+        <div id="contenido" class="row"></div>
+      </div>  
+
+    </div>
+  </div>
+    <div id="root"></div>
+    <!--<script src="./data/pokemon/pokemon.js"></script>-->
+    <!--Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
