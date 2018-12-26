@@ -1,14 +1,103 @@
+document.addEventListener("DOMContentLoaded", function(){
+  M.AutoInit();
+ });
+
+const contenido = document.querySelector("#contenido")
+ fetch ("data/pokemon/pokemon.json")
+ .then(data => data.json())
+ .then(data => {
+     tabla(data)
+  });
+
+ function tabla(data){
+   contenido.innerHTML="";
+     if (Array.isArray(data)){
+       for (let valor of data){
+         //console.log(valor.img)
+         contenido.innerHTML +=`
+           <div class="col s6 m3">
+             <div class="card">
+               <div class="card-image">
+                 <img class="responsive-img" src= "${valor.img}">
+               </div>
+               <div class="card-content">
+                 <p>#${valor.num}</p>
+                 <span class="card-title">${valor.name}</span>
+                 <p>${valor.type}</p>
+               </div>
+             </div>
+           </div>
+         `
+     }
+     }else{
+     for (let valor of data.pokemon){
+       //console.log(valor.img)
+       contenido.innerHTML +=`
+         <div class="col s6 m3">
+           <div class="card">
+             <div class="card-image">
+               <img class="responsive-img" src= "${valor.img}">
+             </div>
+             <div class="card-content">
+               <p>#${valor.num}</p>
+               <span class="card-title">${valor.name}</span>
+               <p>${valor.type}</p>
+             </div>
+           </div>
+         </div>
+       `
+     }
+     }
+  }
+
 
 document.getElementById("option-order").addEventListener("change", () => {
-    document.getElementById("root").innerHTML = "";
+    contenido.innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
-        for(let i=0; i <POKEMON.pokemon.length; i++){
-            document.getElementById("root").innerHTML += `${window.POKEMON.sortData(POKEMON.pokemon, "name", document.getElementById("option-order").value)[i].name} <br>`;
-        }
+      fetch ("data/pokemon/pokemon.json")
+      .then(data => data.json())
+      .then(data=>{
+
+        for (let valor of pokemones.sortData(data.pokemon,"name",document.getElementById("option-order").value)){
+          contenido.innerHTML +=`
+            <div class="col s6 m3">
+              <div class="card">
+                <div class="card-image">
+                  <img class="responsive-img" src= "${valor.img}">
+                </div>
+                <div class="card-content">
+                  <p>#${valor.num}</p>
+                  <span class="card-title">${valor.name}</span>
+                  <p>${valor.type}</p>
+                </div>
+              </div>
+            </div>
+          `
     }
-    if(document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small") {
-        for(let i=0; i <POKEMON.pokemon.length; i++){
-            document.getElementById("root").innerHTML += `${window.POKEMON.sortData(POKEMON.pokemon, "num", document.getElementById("option-order").value)[i].num} <br>`;
-        }
-    }
-});
+  })
+}
+if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
+  fetch ("data/pokemon/pokemon.json")
+  .then(data => data.json())
+  .then(data=>{
+
+    for (let valor of pokemones.sortData(data.pokemon,"num",document.getElementById("option-order").value)){
+      contenido.innerHTML +=`
+        <div class="col s6 m3">
+          <div class="card">
+            <div class="card-image">
+              <img class="responsive-img" src= "${valor.img}">
+            </div>
+            <div class="card-content">
+              <p>#${valor.num}</p>
+              <span class="card-title">${valor.name}</span>
+              <p>${valor.type}</p>
+            </div>
+          </div>
+        </div>
+      `
+}
+})
+}
+})
+   
