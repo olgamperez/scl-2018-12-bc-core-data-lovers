@@ -3,21 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" />
-
+    
   </head>
   <body>
-      <p>Ordenar por: </p>
-      <select id="option-order">
-        <option value="az">Ordenar de A-Z</option> 
-        <option value="za">Ordenar de Z-A</option>
-        <option selected="selected" value="small-big">Ordenar por número inferior </option>
-        <option value="big-small">Ordenar por número superior</option>
-      </select>
-
+      <div class="navbar-fixed">
+          <nav class="grey">
+              <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">POKEMON</a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="sidenav" id="menu-responsive">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="https://www.google.cl/webhp?ie=UTF-8&rct=j">Eventos</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="https://www.google.cl/webhp?ie=UTF-8&rct=j">Eventos</a></li>
+                    <li><a href="#">Calculadora</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+              </div>
+          </nav>
+      </div>
+      <div id="principal-img">
+        <img id="initial-image" class="responsive-img" src="IMG/pokemon2.jpg" alt="Ash junto a Pikachu y otros pokemones populares">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div id="select1" class="col s8 m6">
+          <div id="sortOrder">
+              <select id="option-order">
+                <option selected="selected">Ordenar por:</option>
+                  <option value="az">Ordenar de A-Z</option> 
+                  <option value="za">Ordenar de Z-A</option>
+                  <option value="small-big">Ordenar por número inferior </option>
+                  <option value="big-small">Ordenar por número superior</option>
+                </select>
+          </div>
+        </div> 
+        </div> 
+        <div class="container my-5 text-center">
+          <div class="mt-5">
+        <div id="contenido" class="row"></div> 
+      </div>
+        </div>  
+      </div>
+     
+     
     <div id="root"></div>
 
-    <script src="./data/pokemon/pokemon.js"></script>
+    <!--<script src="./data/pokemon/pokemon.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
