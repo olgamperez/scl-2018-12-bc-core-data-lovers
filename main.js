@@ -1,14 +1,4 @@
 
-//´<img src="${POKEMON.pokemon[1].img}" alt="">
-//document.getElementById(`root`).innerHTML= ´<img src=" ´ + POKEMON.pokemon[1].img ´ " alt=""></img>´
-
-//document.write(resultNameFilter);
-//document.getElementById("btn").addEventListener("click", () => {
-//   for (let i=0; i < result.length; i++) {
-//       document.getElementById("root").innerHTML += (result)[i];
-//   }
-//});
-
 document.getElementById("option-order").addEventListener("change", () => {
     document.getElementById("root").innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
