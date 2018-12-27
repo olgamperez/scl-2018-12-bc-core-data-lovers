@@ -2,10 +2,10 @@ window.pokemones = {
 
 filterData: (data,condition) => {
   const dataPokemon = data;
-  const pokemonGrass = dataPokemon.filter(pokemon => {
+  const pokemonResultFilter = dataPokemon.filter(pokemon => {
     return pokemon.type.indexOf(condition) !== -1 ;
   })
-  return pokemonGrass
+  return pokemonResultFilter
  },
 
 sortData: (data, sortBy, sortOrder) => {
@@ -59,7 +59,7 @@ sortData: (data, sortBy, sortOrder) => {
 }
 
 
-//let pokemonGrass = pokemonType.filter(tipo => {
+//let pokemonResult = pokemonType.filter(tipo => {
       //return tipo.indexOf("Grass") !== -1;
     //});
   //}
@@ -74,11 +74,11 @@ sortData: (data, sortBy, sortOrder) => {
   //}
   //console.log(pokemonType);
  //obtengo todos los pokemones tipo Grass 
-//let pokemonGrass = pokemonType.filter(tipo => {
+//let pokemonResult = pokemonType.filter(tipo => {
    //return tipo.indexOf("Grass") !== -1;
 
 //});
-//console.log(pokemonGrass)
+//console.log(pokemonResult)
 
 //for (let i=0; i<data.length; i++){ console.log(data[i])} muestra lo que tengo dentro de cada objeto
 //for (let i=0; i<data.length; i++){ console.log(data[i].name)} muestra solo los nombres de cada objeto

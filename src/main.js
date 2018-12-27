@@ -3,7 +3,13 @@ document.addEventListener("DOMContentLoaded", function(){
   M.AutoInit();
 });
 
+//Volver al inicio apretando inicio en el menú de nav
+document.getElementById("back-to-initial").addEventListener("click", () => {
+  document.location = "index.html";
+})
 
+
+//Manejo de la función filtrar
 document.getElementById("select-type-pokemon").addEventListener("change",(evento)=>{
   evento.preventDefault();
   let type = document.getElementById("select-type-pokemon").value;
