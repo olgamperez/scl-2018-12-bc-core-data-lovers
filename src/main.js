@@ -113,5 +113,3 @@ const contenido = document.querySelector("#contenido")
  }
  })
 
-
-
