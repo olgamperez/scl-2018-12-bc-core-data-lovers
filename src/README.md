@@ -28,7 +28,7 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-![Vizualización](vizualizar.png)
+![Vizualización](IMG/vizualizar.png)
 
 ## Caso # 2: (Filtrar información)
 
@@ -46,7 +46,7 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-![Flujo para filtrar la información](filtrar.png)
+![Flujo para filtrar la información](IMG/filtrar.png)
 
 ## Caso # 3 (Ordenar información)
 
@@ -67,7 +67,7 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-![Flujo para ordenar la información](ordenar.png)
+![Flujo para ordenar la información](IMG/ordenar.png)
 
 ## Caso # 4: (Cálculos)
 
@@ -87,7 +87,7 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-![Flujo para realizar el calculo](calcular.png)
+![Flujo para realizar el calculo](IMG/calcular.png)
 
 ## Caso # 5: (Busqueda) (Opcional)
 

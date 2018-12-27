@@ -31,7 +31,6 @@ const contenido = document.querySelector("#contenido")
      }
      }else{
      for (let valor of data.pokemon){
-       //console.log(valor.img)
        contenido.innerHTML +=`
          <div class="col s6 m3">
            <div class="card">
