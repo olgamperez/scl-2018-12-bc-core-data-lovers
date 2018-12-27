@@ -1,12 +1,17 @@
+window.pokemones = {
 
-window.pokemones= {
-  sortData: (data, sortBy, sortOrder) => {
+filterData: (data,condition) => {
+  const dataPokemon = data;
+  const pokemonGrass = dataPokemon.filter(pokemon => {
+    return pokemon.type.indexOf(condition) !== -1 ;
+  })
+  return pokemonGrass
+ },
 
+sortData: (data, sortBy, sortOrder) => {
   const dataPokemon = data
-
   if (sortBy === "name" && sortOrder === "az"){
     dataPokemon.sort((prev, next)=> {
- 
       if (prev.name > next.name) {
         return 1;
       }
@@ -18,7 +23,6 @@ window.pokemones= {
   }
   if (sortBy === "name" && sortOrder === "za"){
     dataPokemon.sort((prev, next)=> {
- 
       if (prev.name < next.name) {
         return 1;
       }
@@ -30,7 +34,6 @@ window.pokemones= {
   }
   if (sortBy === "num" && sortOrder === "small-big"){
     dataPokemon.sort((prev, next)=> {
- 
       if (prev.id > next.id) {
         return 1;
       }
@@ -42,7 +45,6 @@ window.pokemones= {
   }
   if (sortBy === "num" && sortOrder === "big-small"){
     dataPokemon.sort((prev, next)=> {
- 
       if (prev.id < next.id) {
         return 1;
       }
@@ -53,7 +55,5 @@ window.pokemones= {
     })
   }
   return dataPokemon
+ }
 }
-} 
- 
-
