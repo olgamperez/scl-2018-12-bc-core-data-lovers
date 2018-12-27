@@ -12,14 +12,15 @@
   </head>
 
     <div class="navbar-fixed">
-        <nav class="grey">
+        <nav id="nav-bar">
             <div class="nav-wrapper container">
               <a href="#" class="brand-logo">POKEMON</a>
               <a href="#" data-target="menu-responsive" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
               </a>
               <ul class="sidenav" id="menu-responsive">
-                  <li><a href="#">Inicio</a></li>
+                  <li><a id="back-to-initial" href="#">Inicio</a></li>
+                  <!--<li><a href="javascript:window.history.go(-1);">volver</a></li>-->
                   <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
                   <li><a href="#">Calculadora</a></li>
                   <li><a href="#">Contacto</a></li>
@@ -36,16 +37,17 @@
     <div id="principal-img">
       <img id="initial-image" class="responsive-img" src="IMG/pokemon2.jpg" alt="Ash junto a Pikachu y otros pokemones populares">
     </div>
-  <body>
+    <div id="introduction">
+        <br>
+          <h5>En esta página encontrarás información y características de <br>rtghrtgh
+          los 151 pokemones pertenecientes a la región de Kanto
+          </h5>
+        <br>
+    </div>
 
+  <body>
+    <br>
     <div class="container">
-        <div id="introduction">
-          <blockquote>
-            <p>En esta página podrás encontrar información y características de 
-            los 151 pokemones pertenecientes a la región de Kanto
-            </p>
-          </blockquote>
-        </div>
       <div class="row">
       <div id="select-pokemon" class="col s8 m6">
         <select id="select-type-pokemon">
@@ -72,13 +74,14 @@
       </div>
       <div id="select-type-order" class="col s4 m6">
           <select id="option-order">
-              <option value="">Ordenar</option>
+              <option value="">Ordenar por</option>
               <option value="az">A - Z</option>
               <option value="za">Z - A</option>
               <option value="small-big">Número inferior</option>
               <option value="big-small">Número superior</option>
           </select>
         </div>
+
       </div>  
       <br>
       </div>
@@ -87,8 +90,16 @@
       <div class="mt-5">
         <div id="contenido" class="row"></div>
       </div>  
-      </div>
-  </div>
+
+        <div id="div-go-up">
+          <a  class="waves-effect waves-light btn " href="#top"><i class="material-icons right">arrow_upward</i>Subir</a>
+        </div>
+
+    </div>
+      <br>
+      <br>
+
+      
     <div id="root"></div>
     <!--<script src="./data/pokemon/pokemon.js"></script>-->
     <!--Compiled and minified JavaScript -->
