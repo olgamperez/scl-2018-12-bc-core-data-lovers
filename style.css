@@ -20,7 +20,7 @@ body{
 
 #div-go-up{
     text-align: center;
-        
+      
 }
 
 .btn{
@@ -28,4 +28,6 @@ body{
 }
 .btn:hover {
     background-color:#bdbdbd;
+    
   }
+ 
