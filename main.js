@@ -1,6 +1,6 @@
 //Initialization for Components 
 document.addEventListener("DOMContentLoaded", function(){
-  M.AutoInit();
+  window.M.AutoInit();
 });
 
 //Volver al inicio apretando inicio en el menú de nav
@@ -16,7 +16,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
   fetch ("data/pokemon/pokemon.json")
     .then(data1 => data1.json())
     .then(data1 => { 
-      tabla(pokemones.filterData(data1.pokemon,type))
+      tabla(window.pokemones.filterData(data1.pokemon,type))
  })
 })
 
@@ -74,7 +74,7 @@ const contenido = document.querySelector("#contenido")
       .then(data => data.json())
       .then(data=>{
  
-        for (let valor of pokemones.sortData(data.pokemon,"name",document.getElementById("option-order").value)){
+        for (let valor of window.pokemones.sortData(data.pokemon,"name",document.getElementById("option-order").value)){
           //console.log(valor.img)
           contenido.innerHTML +=`
             <div class="col s6 m3">
@@ -98,7 +98,7 @@ const contenido = document.querySelector("#contenido")
   .then(data => data.json())
   .then(data=>{
  
-    for (let valor of pokemones.sortData(data.pokemon,"num",document.getElementById("option-order").value)){
+    for (let valor of window.pokemones.sortData(data.pokemon,"num",document.getElementById("option-order").value)){
       //console.log(valor.img)
       contenido.innerHTML +=`
         <div class="col s6 m3">
