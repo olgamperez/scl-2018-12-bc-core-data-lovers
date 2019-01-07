@@ -24,7 +24,13 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
   let pokemonesGhost= window.pokemones.filterData(dataTest,'Ghost')[1].name
   
   assert.equal(pokemonesGhost, 'Haunter')
-   ;});});
+   ;});
+   it('Debería retornar el decimoquinto pokemon de tipo volador', () => {
+    let pokemonesGrass= window.pokemones.filterData(dataTest,'Flying')[15].name
+    
+    assert.equal(pokemonesGrass, 'Articuno')
+     ;});
+  });
   
 //testeo funcion sortData
  describe('pokemon.sortData', () => {
