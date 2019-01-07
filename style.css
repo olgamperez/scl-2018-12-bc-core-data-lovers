@@ -1,31 +1,258 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: #e0e0e0;
-}
-
-#introduction{
     background-color: #bdbdbd;
-    text-align: center;
-    color: #F8F9FA ;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    height: 700px;
 }
-
+  
+  header {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(IMG/pokebolafondo.jpg);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  header .overlay{
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #333;
+    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%); 
+  }
+  h1 {
+      font-size: 80px;
+      margin-bottom: 30px;
+  }
+  
+  h4, h5 {
+      font-family: 'Open Sans', sans-serif;
+      margin-bottom: 30px;
+  }
+  button {
+      border: none;
+      outline: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #333;
+      background: #fff;
+      margin-bottom: 50px;
+      box-shadow: 0 3px 20px 0 #0000003b;
+  }
+  button:hover{
+      cursor: pointer;
+  }
 #nav-bar{
     background-color: #bdbdbd;
-    color: #333333;
 }
-
 #div-go-up{
-    text-align: center;
-        
+    text-align: center;    
 }
-
 .btn{
     background-color:#9e9e9e;
 }
 .btn:hover {
     background-color:#bdbdbd;
+}
+#pokemon-logo{
+    width: 160px;
+    height: 75px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+/*@media screen and (max-width: 1260px) {
+    #pokemon-logo{
+      width: 150px;
+      height: 68px;
+      
+    }
   }
+@media screen and (max-width: 1060px) {
+    #pokemon-logo{
+      width: 150px;
+      height: 68px;
+      
+    }
+  }
+@media screen and (max-width: 480px) {
+    #pokemon-logo{
+      width: 200px;
+      height: 65px;
+      padding-left: 90px;
+      
+    }
+  }
+*/
+/*#images:hover {
+    filter: opacity(.5);
+}*/
+
+.tagsize{
+    border-radius: 12%;
+    padding: 2%;
+}
+#card1{
+    border-radius: 8%;
+    background-color:#eeeeee;
+}
+#card1:hover {
+    border: solid  #757575;
+    border-radius: 8%;
+    cursor: pointer;
+}
+#name-number{
+    text-align: center;
+    color: #333333;
+    font-family: inherit;
+}
+.card-panel{
+    border-radius: 5%;
+}
+#table-info th, td {
+    text-align: center;
+}
+#btn-go-back{
+    text-align: right;
+}
+#card-profile{
+    background-color: #f5f5f5; 
+}
+.Fire{
+    background-color: #ffa726 ;
+    border: 2px solid #ff9800;   
+}
+.Flying{
+    background-color: #9fa8da ;
+    border: 2px solid #7986cb;   
+}
+.Psychic{
+    background-color: #ef9a9a ;
+    border: 2px solid #e57373;   
+}
+
+.Ice{
+    background-color: #80cbc4 ;
+    border: 2px solid #4db6ac;   
+}
+.Grass{
+    background-color:#4caf50;
+    border: 2px solid #388e3c;  
+}
+.Poison{
+    background-color: #ba68c8;
+    border: 2px solid #ab47bc; 
+}
+.Bug{
+    background-color:#9ccc65;
+    border: 2px solid #689f38; 
+}
+.Dragon{
+    background-color:#01579b;
+    border: 2px solid #0277bd; 
+}
+.Water{
+    background-color:#42a5f5;
+    border: 2px solid #40c4ff; 
+}
+.Electric{
+    background-color:#ffe082;
+    border: 2px solid  #ffd54f; 
+}
+.Fairy{
+    background-color:#f06292;
+    border: 2px solid #ec407a; 
+}
+.Fighting{
+    background-color:#d32f2f;
+    border: 2px solid #c62828; 
+}
+.Ghost{
+    background-color:#5c6bc0;
+    border: 2px solid #3f51b5; 
+}
+.Ground{
+    background-color:#8d6e63;
+    border: 2px solid #6d4c41; 
+}
+.Normal{
+    background-color:#757575 ;
+    border: 2px solid #424242; 
+}
+.Rock{
+    background-color:#d7ccc8 ;
+    border: 2px solid #bcaaa4 ; 
+}
+.Steel{
+    background-color:#00897b ;
+    border: 2px solid #00796b ; 
+}
+.Dark{
+    background-color:#424242 ;
+    border: 2px solid #212121 ; 
+}
+.undefined{
+    display: none !important;
+}
+#card-title{
+    text-align: center;
+}
+#card-type{
+    background-color: #9e9e9e;
+}
+.type1{
+    background-color:#4caf50;
+    border: 2px solid #388e3c;
+}
+.type2{
+    background-color: #ba68c8;
+    border: 2px solid #ab47bc;
+}
+#second-page{
+    display: none;
+}
+.page-footer{
+    background-color: #9e9e9e;
+}
+#social-media li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+#social-media li a{
+    font-size: 25px;
+}
+#social-media li a i{
+    line-height: 50px;
+}
+#space-footer{
+    margin-left: 60px;
+}
+
+.footer-copyright a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 448px) {
+    h1{
+        font-size: 55px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1400px){
+    .card .card-content{
+        padding: 14px;
+    }    
+}
+ 
