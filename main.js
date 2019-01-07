@@ -52,16 +52,16 @@ function clickOnImg (data) {
                      <th>ALTURA</td>
                    </tr>
                    <tr>
-                     <td>${data[i].spawn_time} min </td>
-                     <td>${data[i].height}</td>
+                     <td class="tables">${data[i].spawn_time} min </td>
+                     <td class="tables">${data[i].height}</td>
                    </tr>
                    <tr>
                      <th>PESO</th>
                      <th>EGG</th>
                    </tr>
                    <tr>
-                     <td>${data[i].weight}</td>
-                     <td>${data[i].egg}</td>
+                     <td class="tables">${data[i].weight}</td>
+                     <td class="tables">${data[i].egg}</td>
                    </tr>
                   </table>
                 </span>
