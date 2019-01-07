@@ -57,3 +57,13 @@ sortData: (data, sortBy, sortOrder) => {
   return dataPokemon
  }
 }
+//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos 
+//estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
+
+var animals =[];
+funtion promPoke() {
+for (let i=0; allPokemon.pokemon.height <0; i++){
+    animals.push(allPokemon.pokemon.height[i]);
+    console.log(animals);
+  }
+}
