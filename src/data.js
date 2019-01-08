@@ -1,6 +1,13 @@
 window.pokemones = {
 
-filterData: (data,condition) => {
+//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos 
+//estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
+  
+  //computeStats: (data) =>{},
+
+
+
+  filterData: (data,condition) => {
   const dataPokemon = data;
   const pokemonResultFilter = dataPokemon.filter(pokemon => {
     return pokemon.type.indexOf(condition) !== -1 ;
@@ -57,6 +64,3 @@ sortData: (data, sortBy, sortOrder) => {
   return dataPokemon
  }
 }
-//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos 
-//estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
-

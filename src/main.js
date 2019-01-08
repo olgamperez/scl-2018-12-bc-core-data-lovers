@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){
 document.getElementById("back-to-initial").addEventListener("click", () => {
   document.location = "index.html";
 })
+ 
 let allPokemon;
 const content = document.querySelector("#content")
   fetch ("data/pokemon/pokemon.json")
@@ -89,8 +90,6 @@ function clickOnImg (data) {
               </div>
            </div>    
           </div>
-  
-          <div><h4>Evoluciones</h4></div>
           <div id="btn-go-back">
               <a href="" class="waves-effect waves-light btn">Volver al Inicio</a>
           </div>
@@ -113,7 +112,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
       if (Array.isArray(data)){
         for (let valor of data){
           content.innerHTML +=`
-            <div class="col s12 m3">
+            <div class="col s6 m3">
               <div id="card1" class="card">
                 <div  id="images" class="card-image">
                   <img class="img-pokemon responsive-img" src= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${valor.num}.png">
@@ -136,7 +135,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
         for (let valor of pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
           content.innerHTML +=`
-            <div class="col s12 m3">
+            <div class="col s6 m3">
               <div id="card1" class="card">
                 <div  id="images" class="card-image">
                   <img class="img-pokemon responsive-img" src= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${valor.num}.png">
@@ -156,7 +155,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
     if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
         for (let valor of pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
           content.innerHTML +=`
-           <div class="col s12 m3">
+           <div class="col s6 m3">
               <div id="card1" class="card">
                 <div  id="images"  class="card-image">
                  <img class="img-pokemon responsive-img" src= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${valor.num}.png">
@@ -177,6 +176,32 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
  function runData () {
    showPokemons(allPokemon.pokemon) 
    clickOnImg(allPokemon.pokemon)
+   //Botón calculadora del a  navbar
+  document.getElementById("calculator-btn").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("contact-form").style.display="none";
+  document.getElementById("form-pokemon").style.display="block";
+})
+//Botón limpiar calculadora
+document.getElementById("clear-btn").addEventListener("click",()=>{
+  document.getElementById("my-form").reset();
+})
+//Botón Calcular calculadora
+document.getElementById("result-btn").addEventListener("click",()=>{
+  let myCandys = parseInt(document.getElementById("number1").value);
+  let needCandys = parseInt(document.getElementById("number2").value);
+  let resultCandys=needCandys-myCandys; 
+  let resultKm=resultCandys*5;
+  document.getElementById("result").value= resultKm;
+}) 
+//Botón contacto del a  navbar
+document.getElementById("contact-btn").addEventListener("click",()=>{
+document.getElementById("first-page").style.display="none";
+document.getElementById("second-page").style.display="none";
+document.getElementById("form-pokemon").style.display="none";
+document.getElementById("contact-form").style.display="block";
+  })
  }
  window.onload = runData;
 

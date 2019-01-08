@@ -13,7 +13,6 @@
     
   </head>
         
-     
   <body>
       <nav id="nav-bar">
           <div class="container nav-wrapper">
@@ -24,14 +23,14 @@
             <ul class="right hide-on-med-and-down">
               <li><a id="back-to-initial" href="#">Inicio</a></li>
               <li><a href="https://pokemongolive.com/es/events/" target="_blank">Eventos</a></li>
-              <li><a href="#">Calculadora</a></li>
-             <li><a href="#">Contacto</a></li>
+              <li><a href="#" id="calculator-btn">Calculadora</a></li>
+             <li><a href="#" id="contact-btn">Contacto</a></li>
            </ul>
            <ul class="sidenav" id="menu-responsive">
               <li><a href="#">Inicio</a></li>
               <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
-              <li><a href="#">Calculadora</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="#" id="calculator-btn">Calculadora</a></li>
+              <li><a href="#" >Contacto</a></li>
            </ul>
          </div>
      </nav>
@@ -43,14 +42,14 @@
           <h4>La Wiki Pro de PokemonGo</h4>
           <h5>En esta página encontrarás información y las características de <br> los 151 pokemones pertenecientes la región de Kanto</h5>
           <br>
-          <button>Desliza para más!</button>
+          <button id="scroll-btn">Desliza para más!</button>
       </div>
     </div>
 
     <br>
     <div class="container">
       <div class="row">
-      <div id="select-pokemon" class="col s6 m6">
+      <div id="select-pokemon" class="col s12 m6">
         <select id="select-type-pokemon">
             <option value="">Elige Tipo de Pokemon</option>
             <option value="Ground">Tierra</option>
@@ -73,7 +72,7 @@
             <option value="Fairy">Hada</option>
         </select>
       </div>
-      <div id="select-type-order" class="col s6 m6">
+      <div id="select-type-order" class="col s12 m6">
           <select id="option-order">
               <option value="">Ordenar por</option>
               <option value="az">A - Z</option>
@@ -92,10 +91,52 @@
       <br>
 </div>         
         <!--2ºPantalla-->
-    <div id="second-page">
-    </div>  
+    <div id="second-page"></div>  
     <br>
-    <br>  
+    <br>
+    <div class="container">
+      <div class="row">
+          <div id="form-pokemon" class="col s12 m6">
+              <form id="my-form">
+                  <label class="text-calculator">¿Cuantos candys tienes?</label>
+                  <input type="text" id="number1" placeholder="Escribe un número">
+                  <br>
+                 <label class="text-calculator">¿Cuántos candys quieres conseguir ?</label>
+                  <input type="text" id="number2" placeholder="Escribe un número">
+                  <label class="text-calculator">Cantidad de Km que deber recorrer</label>
+                 <input type="text" id="result">
+                  <button type="button" id="result-btn">Calcular</button>
+                  <button type="button" id="clear-btn">Limpiar</button>
+             </form>
+         </div>  
+         <div id="contact-form" class="col s12 ">
+           <form id="my-form2">
+             <div class="row card-panel">
+               <div class="input-field col s6">
+                 <input type="text" placeholder="Ingresa nombre" id="name" class="validate" required>
+                 <label for="name">Nombre</label>
+               </div>
+
+               <div class="input-field col s6">
+                  <input type="text" id="lastname" class="validate" required>
+                  <label for="lastname">Apellido</label>
+               </div>
+
+               <div class="input-field col s12">
+                  <input type="email" id="email">
+                  <label for="email">Email</label>
+               </div>
+               <div class="input-field col s12">
+                  <textarea id="coments-area" id="" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+               </div>
+
+               <button class="btn" type="submit">Enviar</button>
+             </div>     
+           </form>
+         </div> 
+      </div>
+    </div>  
+
      <!--Empieza el footer-->
       <footer class="page-footer">
         <div class="container">
