@@ -7,7 +7,7 @@
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/",
     "pretest": "npm run eslint && npm run htmlhint",
-    "test": "mocha test/headless.js"
+    "test": "jest"
   },
   "dependencies": {
     "chai": "^4.1.2",
