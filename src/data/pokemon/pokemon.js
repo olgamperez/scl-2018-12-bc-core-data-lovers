@@ -98,7 +98,7 @@ const POKEMON = {
   }, {
     "id": 4,
     "num": "004",
-    "name": "Charmander",
+    "name": "Ch",
     "img": "http://www.serebii.net/pokemongo/pokemon/004.png",
     "type": [
       "Fire"
@@ -4085,4 +4085,5 @@ const POKEMON = {
   }]
 }
 ;;
+window.POKEMON = POKEMON;
 
