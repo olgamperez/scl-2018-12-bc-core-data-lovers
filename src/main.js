@@ -133,7 +133,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
   document.getElementById("option-order").addEventListener("change", () => {
     content.innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
-        for (let valor of pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
+        for (let valor of window.pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
           content.innerHTML +=`
             <div class="col s6 m3">
               <div id="card1" class="card">
@@ -149,11 +149,11 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
               </div>
             </div>
           ` 
-         clickOnImg(pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value));
+         clickOnImg(window.pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value));
     }
     }
     if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
-        for (let valor of pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
+        for (let valor of window.pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
           content.innerHTML +=`
            <div class="col s6 m3">
               <div id="card1" class="card">
@@ -169,7 +169,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
              </div>
            </div>
       `
-      clickOnImg(pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value));
+      clickOnImg(window.pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value));
  }
  }
  })

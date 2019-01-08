@@ -269,7 +269,7 @@ body{
 }
 @media screen and (max-width: 380px) {
     .card .card-content{
-        padding: 10px;
+        padding: 4px;
         padding-bottom: 6px;
        
     }  
