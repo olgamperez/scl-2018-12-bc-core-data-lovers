@@ -6,7 +6,6 @@
 
 body{
     background-color: #bdbdbd;
-    height: 700px;
 }
   
 #cover-page {
@@ -16,35 +15,27 @@ body{
         rgba(0, 0, 0, 0.5)
       ),
       url(IMG/leslie.png);
-    background-size: cover;  
-    text-align: center;
-    width: 100%;
-    height: auto;
     background-size: cover;
-    height: 600px;
-    position: relative;
+    background-repeat: no-repeat;  
     overflow: hidden;
-    
+
   }
 #cover-page .overlay{
-      width: 100%;
-      height: 100%;
+  
       padding: 50px;
       color: #FFF;
       text-shadow: 1px 1px 1px #333;
       margin-top: 13%;
       margin-left: 25%;
+   
     
   }
-  h1 {
-      font-size: 80px;
-      margin-bottom: 30px;
-  }
-  
   h4, h5 {
       font-family: 'Open Sans', sans-serif;
       margin-bottom: 30px;
       color: #f5f5f5;
+   
+      
   }
   button {
       border: none;
@@ -77,33 +68,6 @@ body{
     padding-bottom: 25px;
     padding-top: 10px;
 }
-/*@media screen and (max-width: 1260px) {
-    #pokemon-logo{
-      width: 150px;
-      height: 68px;
-      
-    }
-  }
-@media screen and (max-width: 1060px) {
-    #pokemon-logo{
-      width: 150px;
-      height: 68px;
-      
-    }
-  }
-@media screen and (max-width: 480px) {
-    #pokemon-logo{
-      width: 200px;
-      height: 65px;
-      padding-left: 90px;
-      
-    }
-  }
-*/
-/*#images:hover {
-    filter: opacity(.5);
-}*/
-
 .tagsize{
     border-radius: 12%;
     padding: 2%;
@@ -227,6 +191,22 @@ body{
 #second-page{
     display: none;
 }
+#form-pokemon{
+    display: none; 
+}
+
+#contact-form{
+    display: none;
+}
+#coments-area{
+    width: 100%;
+    height: 80%;
+    padding: 1%;
+}
+.text-calculator{
+    font-size: 1.1rem;
+    color: white;
+}
 .tables{
     background-color: #bdbdbd ;
 }
@@ -252,14 +232,71 @@ body{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 448px) {
-    h1{
-        font-size: 55px;
-    }
+@media screen and (max-width: 510px) {
+    .card .card-content{
+        padding: 6px;
+    }  
+    .card .card-title {
+        font-size: 15px;
+    }     
+}
+@media screen and (max-width: 700px) {
+    .card .card-content{
+        padding: 4px;
+    }  
+    .card .card-title {
+        font-size: 15px;
+    }     
 }
 @media screen and (min-width: 700px) and (max-width: 1400px){
+    .card .card-title {
+        font-size: 20px;
+    } 
     .card .card-content{
-        padding: 14px;
-    }    
+        padding: 6px;
+        padding-bottom: 8px;
+    } 
+    #cover-page{   
+        background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(IMG/leslie.png);
+        background-size: cover;
+        background-repeat: no-repeat;  
+        overflow: hidden;
+        background-position:center;
+    }  
+    #scroll-btn{
+        font-size:1rem; 
+    }
 }
- 
+@media screen and (max-width: 380px) {
+    .card .card-content{
+        padding: 10px;
+        padding-bottom: 6px;
+       
+    }  
+    .card .card-title {
+        font-size: 15px;
+        
+    }
+    .flow-text {
+        font-size: 1.8rem;
+    }   
+    #cover-page{   
+        background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+        ),
+        url(IMG/leslie.png); 
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+    }   
+    #scroll-btn{
+        font-size:1.1rem; 
+    }
+}
