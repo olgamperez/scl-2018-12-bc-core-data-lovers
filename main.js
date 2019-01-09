@@ -6,6 +6,15 @@ document.addEventListener("DOMContentLoaded", function(){
 document.getElementById("back-to-initial").addEventListener("click", () => {
   document.location = "index.html";
 })
+
+//Manejo del cálculo 
+document.getElementById("select-type-pokemon").addEventListener("change", () => {
+  document.getElementById("result-sum").innerHTML = "";
+  let type = document.getElementById("select-type-pokemon").value;
+  document.getElementById("result-sum").innerHTML = `
+  <p>Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto </p>`;
+
+  });
  
 let allPokemon;
 const content = document.querySelector("#content")
@@ -205,6 +214,4 @@ document.getElementById("contact-form").style.display="block";
  }
  window.onload = runData;
 
-
-
-
+  
