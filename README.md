@@ -1,14 +1,14 @@
 # PokepediaGo
 
-![Vizualización](IMG/leslie.png)
+![Visualización](IMG/leslie.png)
 
 # PROLOGO:
 
 El objetivo principal de este proyecto es realizar una herramienta que le permita a los Pokemon Trainer visualizar la información requerida de diversos pokemones de manera que pueda acceder a ella de forma fácil y precisa. Para ello se tienen en consideración los siguientes objetivos:
 
-• Ubicar y visualizar en primera instancia de forma facil y sencilla utilizando la imagen de cada criatura, el nombre y/o número de identificación.
+• Ubicar y visualizar en primera instancia de forma fácil y sencilla utilizando la imagen de cada criatura, el nombre y/o número de identificación.
 
-• Cuando el usuario encuentre el pokemon de su interés al hacer click en la imagen podrá ver la información detallada basándose en sus debilidades, tipo, peso, evolución entre otras. 
+• Cuando el usuario encuentre el pokemon de su interés al hacer Click"  en la imagen podrá ver la información detallada basándose en sus debilidades, tipo, peso, evolución entre otras. 
 
 • Se da la opción de filtrar información según el tipo de pokemon y estará categorizada en un menú desplegable para facilitar su accesibilidad.
 
@@ -29,7 +29,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 - d)Contacto:Muestra información del contacto de los desarrolladores de la pagina web en caso de solicitar alguna información y/o emitir opinión.
 
 Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon así como también el logo oficial.
-![Vizualización](IMG/logo.png)
+![Visualización](IMG/logo.png)
 
 Se le integro una breve descripción de lo que el usuario encontrara en la pagina y un botón scroll "Desliza para más!" 
 
@@ -46,7 +46,7 @@ Además incluye un hover que al hacer "Click" redirige a la descripción de cada
 3era. Vista:
 Incluye información específica y detallada de cada pokemon, tal como: nombre y número (en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
 
-   ![Visualización](IMG/terceraVista.png)
+![Visualización](IMG/terceraVista.png)
 
 Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
 
@@ -55,6 +55,20 @@ Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista ant
 ![Visualización](IMG/pantallaPrincipal.png)
 
 ## HISTORIA DE USUARIOS Y PROTOTIPOS DE USABILIDAD:
+
+Una vez definido el tema del proyecto se realizo en primera instancia los sketch donde se muestra un prototipo de baja fidelidad (dibujado en papel), recibiendo feedback tanto del propio squad como del algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de mediana fidelidad elaborado en Figma (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
+
+### - Sketch 1. Pantalla principal
+
+![Visualización](IMG/sketch1.png)
+
+### - Sketch 2. Pantalla Filtrar/ Ordenar
+
+![Visualización](IMG/sketch2.png)
+
+### - Sketch 3. Pantalla Calculo
+
+![Visualización](IMG/sketch3.png)
 
 ## Caso # 1: (Visualizar información General)
 
