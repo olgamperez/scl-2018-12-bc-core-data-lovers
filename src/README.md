@@ -1,3 +1,7 @@
+# PokepediaGo
+
+![Vizualización](IMG/leslie.png)
+
 # PROLOGO:
 
 El objetivo principal de este proyecto es realizar una herramienta que le permita a los Pokemon Trainer visualizar la información requerida de diversos pokemones de manera que pueda acceder a ella de forma fácil y precisa. Para ello se tienen en consideración los siguientes objetivos:
@@ -24,8 +28,10 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 - c) Calculadora: Muestra una pequeña calculadora que permite realizar el calculo de los Km necesarios a recorrer para completar los "Candys" para evolucionar a un pokemon.
 - d)Contacto:Muestra información del contacto de los desarrolladores de la pagina web en caso de solicitar alguna información y/o emitir opinión.
 
-Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon.
-![Vizualización](IMG/imgen.png)
+Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon así como también el logo oficial.
+![Vizualización](IMG/logo.png)
+
+A la cual se le integro una breve descripción de lo que el usuario encontrara en la pagina y un botón scroll "Desliza para más!" 
 
 Debajo se encuentran dos select; al lado izquierdo el de filtrar la data el cual permite filtrar la información por el tipo de pokemon y del lado derecho el de ordenar lo cual sirve para ordenar la data de forma alfabética o numérica.
 
@@ -37,17 +43,18 @@ Se presentan como foco principal el conjunto de los 151 pokemones con los datos 
 Despliega el conjunto de pokemones según el orden (alfabeto/numérico, ascendente o descendente) seleccionado.
 Además incluye un hover que al hacer "Click" redirige al modal de cada pokemon.
 
-Modales: Incluye información específica y detallada de cada pokemon, tal como: nombre y número(en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
+3era. Vista:
+Incluye información específica y detallada de cada pokemon, tal como: nombre y número(en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
 
-![Visualización](IMG/modal.png)
+![Visualización](IMG/terceraVista.png)
 
 Ninguna de las vistas generan documento de HTML nuevos, solo ocultan la vista anterior y muestra la nueva. 
 
-#####La pantalla principal se ve de la siguiente manera:
+##### La pantalla principal se ve de la siguiente manera:
 
 ![Visualización](IMG/pantallaPrincipal.png)
 
-# HISTORIA DE USUARIOS:
+## HISTORIA DE USUARIOS Y PROTOTIPOS DE USABILIDAD:
 
 ## Caso # 1: (Visualizar información General)
 
