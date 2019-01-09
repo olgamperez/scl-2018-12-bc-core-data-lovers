@@ -70,7 +70,7 @@ Una vez definido el tema del proyecto se realizo en primera instancia los sketch
 
 ![Visualización](IMG/sketch3.png)
 
-### - Sketch 1. Pantalla principal
+### - Prototipo de baja fidelidad
 
 ![Visualización](IMG/Pbajafidelidad.png)
 
