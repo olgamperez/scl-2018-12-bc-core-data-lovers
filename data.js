@@ -1,6 +1,6 @@
 window.pokemones = {
 //Suma las debilidades (electrico la mas repetida)
-  computeStatsWeak: (data,type) =>{
+  /*computeStatsWeak: (data,type) =>{
     const dataPokemon = data;
     let sum = 0;
     dataPokemon.forEach(element =>{
@@ -19,7 +19,7 @@ window.pokemones = {
       }
     })
     return sum 
-  },
+  },*/
 //Lo oficial de aqui hacia abajo 
   computeStats: (data,type) =>{
     const dataPokemon = data;
