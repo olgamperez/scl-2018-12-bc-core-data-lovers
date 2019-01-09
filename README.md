@@ -56,7 +56,7 @@ Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista ant
 
 ## HISTORIA DE USUARIOS Y PROTOTIPOS DE USABILIDAD:
 
-Una vez definido el tema del proyecto se realizo en primera instancia los sketch donde se muestra un prototipo de baja fidelidad (dibujado en papel), recibiendo feedback tanto del propio squad como del algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de mediana fidelidad elaborado en Figma (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
+Una vez definido el tema del proyecto se realizo en primera instancia los sketch; a partir del cual se inicia el prototipo de baja fidelidad con Figma (aplicación de diseño de interfaces ), recibiendo feedback tanto del propio squad como de algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de alta fidelidad elaborado en la misma herramienta (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
 
 ### - Sketch 1. Pantalla principal
 
@@ -69,6 +69,10 @@ Una vez definido el tema del proyecto se realizo en primera instancia los sketch
 ### - Sketch 3. Pantalla Calculo
 
 ![Visualización](IMG/sketch3.png)
+
+### - Sketch 1. Pantalla principal
+
+![Visualización](IMG/Pbajafidelidad.png)
 
 ## Caso # 1: (Visualizar información General)
 
