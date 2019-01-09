@@ -18,7 +18,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 
 • Además se podrá implementar un buscador donde se escriba; bien sea el nombre del pokemon o también su número de identificación y accederá a toda la información de manera individual.
 
-##Desarrollo de contenidos:
+## Desarrollo de contenidos:
 
 - En este apartado se define el contenido del sitio y toda la información relevante acerca del mismo:
 
@@ -31,24 +31,24 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon así como también el logo oficial.
 ![Vizualización](IMG/logo.png)
 
-A la cual se le integro una breve descripción de lo que el usuario encontrara en la pagina y un botón scroll "Desliza para más!" 
+Se le integro una breve descripción de lo que el usuario encontrara en la pagina y un botón scroll "Desliza para más!" 
 
 Debajo se encuentran dos select; al lado izquierdo el de filtrar la data el cual permite filtrar la información por el tipo de pokemon y del lado derecho el de ordenar lo cual sirve para ordenar la data de forma alfabética o numérica.
 
-Se presentan como foco principal el conjunto de los 151 pokemones con los datos como número, nombre y tipo. La interacción del usuario le permite notar a través de un hover identificar que al hacer "Click" en la imagen lo lleva a una nueva pestaña en este caso un modal.
+Se presentan como foco principal el conjunto de los 151 pokemones con los datos como número, nombre y tipo. La interacción del usuario le permite notar a través de un hover identificar que al hacer "Click" en la imagen lo lleva a una nueva página.
 
 2da. Vista:
 (pokemones filtrados por) : Despliega el conjunto de pokemones según el tipo seleccionado.
 (pokemones ordenados por) :
 Despliega el conjunto de pokemones según el orden (alfabeto/numérico, ascendente o descendente) seleccionado.
-Además incluye un hover que al hacer "Click" redirige al modal de cada pokemon.
+Además incluye un hover que al hacer "Click" redirige a la descripción de cada pokemon.
 
 3era. Vista:
-Incluye información específica y detallada de cada pokemon, tal como: nombre y número(en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
+Incluye información específica y detallada de cada pokemon, tal como: nombre y número (en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
 
-![Visualización](IMG/terceraVista.png)
+   ![Visualización](IMG/terceraVista.png)
 
-Ninguna de las vistas generan documento de HTML nuevos, solo ocultan la vista anterior y muestra la nueva. 
+Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
 
 ##### La pantalla principal se ve de la siguiente manera:
 
