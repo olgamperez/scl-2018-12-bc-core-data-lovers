@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>PokePedia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,43 +14,51 @@
   </head>
         
   <body>
-      <nav id="nav-bar">
-          <div class="container nav-wrapper">
-            <a href="#" class="brand-logo">PoKePedia</a>
-            <a href="#" data-target="menu-responsive" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-           </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a id="back-to-initial" href="#">Inicio</a></li>
-              <li><a href="https://pokemongolive.com/es/events/" target="_blank">Eventos</a></li>
-              <li><a href="#" id="calculator-btn">Calculadora</a></li>
-             <li><a href="#" id="contact-btn">Contacto</a></li>
-           </ul>
-           <ul class="sidenav" id="menu-responsive">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
-              <li><a href="#" >Calculadora</a></li>
-              <li><a href="#" >Contacto</a></li>
-           </ul>
-         </div>
-     </nav>
+   
+        <nav id="nav-bar">
+              <div class="container nav-wrapper">
+                <a href="#" class="brand-logo">PoKePedia</a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                  <i class="material-icons">menu</i>
+               </a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a id="back-to-initial" href="#">Inicio</a></li>
+                  <li><a href="https://pokemongolive.com/es/events/" target="_blank">Eventos</a></li>
+                 <li><a href="#" id="calculator-btn">Calculadora</a></li>
+                 <li><a href="#" id="contact-btn">Contacto</a></li>
+               </ul>
+               <ul class="sidenav" id="menu-responsive">
+                  <li><a id="back-to-initial-responsive" href="#">Inicio</a></li>
+                  <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
+                  <li><a id="calculator-btn-responsive" href="#" >Calculadora</a></li>
+                  <li><a id="contact-btn-responsive" href="#" >Contacto</a></li>
+              </ul>
+             </div>
+        </nav>
 
     <div id="first-page"> 
-    <div id="cover-page">
-      <div class="overlay">
-          <h4>La Wiki Pro de PokemonGo</h4>
-          <h5>En esta página encontrarás información y las características de <br> los 151 pokemones pertenecientes la región de Kanto</h5>
-          <br>
-          <button id="scroll-btn">Desliza para más!</button>
+    <header id="cover-page">
+      <div class=" container overlay ">
+          <div class="row">
+            <div class="col s8 offset-s2">
+                <h1>La Wiki Pro de PokemonGo</h1>
+                <h2>En esta página encontrarás información y las características de los 151 pokemones pertenecientes la región de Kanto</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6 offset-s4">
+                <button id="scroll-btn">Desliza para más!</button>
+            </div>
+          </div>
       </div>
-    </div>
-    <br>
-    <div class="container">
+    </header>
+
+    <div  class="container">
       <div class="row">
       <div id="select-pokemon" class="col s12 m6">
         <select id="select-type-pokemon">
             <option value="">Elige Tipo de Pokemon</option>
-            <option name ="Tierra" value="Ground">Tierra</option>
+            <option value="Ground">Tierra</option>
             <option value="Water">Agua</option>
             <option value="Fire">Fuego</option>
             <option value="Normal">Normal</option>
@@ -78,63 +86,69 @@
               <option value="small-big">Número inferior</option>
               <option value="big-small">Número superior</option>
           </select>
+          <br>
       </div>
-          <div id="result-sum"></div>
+          <div id="result-sum"><h5 id="text-result-sum"></h5></div>
       </div>  
+      
       <div id="content" class="row"></div>
-      </div>
-      <div id="div-go-up">
-        <a  class="waves-effect waves-light btn " href="#top"><i class="material-icons right">arrow_upward</i>Subir</a>
-      </div>
     </div>
-      <br>        
-        <!--2ºPantalla-->
-    <div id="second-page"></div>  
-    <br>
-    <br>
-    <div class="container">
-      <div class="row">
-          <div id="form-pokemon" class="col s12 m6">
-              <form id="my-form">
-                  <label class="text-calculator">¿Cuantos candys tienes?</label>
-                  <input type="text" id="number1" placeholder="Escribe un número">
-                  <br>
-                 <label class="text-calculator">¿Cuántos candys quieres conseguir ?</label>
-                  <input type="text" id="number2" placeholder="Escribe un número">
-                  <label class="text-calculator">Cantidad de Km que deber recorrer</label>
-                 <input type="text" id="result">
-                  <button type="button" id="result-btn">Calcular</button>
-                  <button type="button" id="clear-btn">Limpiar</button>
-             </form>
-         </div>  
-         <div id="contact-form" class="col s12 ">
-           <form id="my-form2">
-             <div class="row card-panel">
-               <div class="input-field col s6">
-                 <input type="text" placeholder="Ingresa nombre" id="name" class="validate" required>
-                 <label for="name">Nombre</label>
-               </div>
 
-               <div class="input-field col s6">
-                  <input type="text" id="lastname" class="validate" required>
-                  <label for="lastname">Apellido</label>
-               </div>
-
-               <div class="input-field col s12">
-                  <input type="email" id="email">
-                  <label for="email">Email</label>
-               </div>
-               <div class="input-field col s12">
-                  <textarea id="coments-area" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
-               </div>
-
-               <button class="btn" type="submit">Enviar</button>
-             </div>     
-           </form>
-         </div> 
+    <div class="row">  
+      <div id="div-go-up" class="col s6 offset-s6
+      
+      ">
+        <a  class="waves-effect waves-light btn " href="#top"><i class="material-icons right">arrow_upward</i>Subir</a>
       </div>
     </div>  
 
+    </div>        
+        <!--2ºPantalla-->
+    <div id="second-page"></div>  
+    <section id="calculator-form">
+        <div class="container">
+            <div class="row">
+                <div id="form-pokemon" class="col s12 m6 offset-m3">
+                    <div id="calculator-text"><h5>Aquí podrás saber cuantos kilometros necesitas recorrer para evolucionar tu pokemon</h5></div>
+                    <form id="my-form">
+                        <label class="text-calculator">¿Cuantos candys tienes?</label>
+                        <input type="text" id="number1" placeholder="Escribe un número">
+                        <br>
+                       <label class="text-calculator">¿Cuántos candys quieres conseguir ?</label>
+                        <input type="text" id="number2" placeholder="Escribe un número">
+                        <label class="text-calculator">Cantidad de Km que deber recorrer</label>
+                       <input type="text" id="result">
+                        <button type="button" id="result-btn" class="btn">Calcular</button>
+                        <button type="button" id="clear-btn" class="btn">Limpiar</button>
+                   </form>
+               </div>  
+               <div id="contact-form" class="col s12 m6 offset-m3">
+                 <form id="my-form2">
+                   <div class="row card-panel">
+                     <div class="input-field col s6">
+                       <input type="text" placeholder="Ingresa nombre" id="name" class="validate" required>
+                       <label for="name">Nombre</label>
+                     </div>
+      
+                     <div class="input-field col s6">
+                        <input type="text" id="lastname" class="validate" required>
+                        <label for="lastname">Apellido</label>
+                     </div>
+      
+                     <div class="input-field col s12">
+                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                     </div>
+                     <div class="input-field col s12">
+                        <textarea id="coments-area" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                     </div>
+                     <button class="btn" type="submit">Enviar</button>
+                   </div>     
+                 </form>
+               </div> 
+            </div>
+          </div>  
+    </section>
      <!--Empieza el footer-->
       <footer class="page-footer">
         <div class="container">
@@ -161,7 +175,8 @@
           </div>
         </div>
       </footer>     
-    <div id="root"></div>   
+    <div id="root"></div>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

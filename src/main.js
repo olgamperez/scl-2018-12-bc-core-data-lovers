@@ -2,17 +2,34 @@
 document.addEventListener("DOMContentLoaded", function(){
  window.M.AutoInit();
 });
-//Volver al inicio apretando inicio en el menú de nav
+//Volver al inicio apretando inicio en el menú 
 document.getElementById("back-to-initial").addEventListener("click", () => {
   document.location = "index.html";
 })
-
+ //Volver al inicio apretando inicio en el menú responsive
+ document.getElementById("back-to-initial-responsive").addEventListener("click", () => {
+  document.location = "index.html";
+  }) 
+//Botón calculadora del a  navbar responsive
+ document.getElementById("calculator-btn-responsive").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("contact-form").style.display="none";
+  document.getElementById("form-pokemon").style.display="block";
+}) 
+//Botón contacto del a  navbar responsive
+document.getElementById("contact-btn-responsive").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("form-pokemon").style.display="none";
+  document.getElementById("contact-form").style.display="block";
+})  
 //Manejo del cálculo 
 document.getElementById("select-type-pokemon").addEventListener("change", () => {
-  document.getElementById("result-sum").innerHTML = "";
+  document.getElementById("text-result-sum").innerHTML = "";
   let type = document.getElementById("select-type-pokemon").value;
-  document.getElementById("result-sum").innerHTML = `
-  <p>Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto </p>`;
+  document.getElementById("text-result-sum").innerHTML = `
+  Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto`;
 
   });
  
@@ -140,6 +157,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
   }
   //Manejo de la función ordenar
   document.getElementById("option-order").addEventListener("change", () => {
+    document.getElementById("text-result-sum").innerHTML = "";
     content.innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
@@ -163,6 +181,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
     }
     if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
+          document.getElementById("text-result-sum").innerHTML = "";
           content.innerHTML +=`
            <div class="col s6 m3">
               <div id="card1" class="card">
@@ -185,7 +204,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
  function runData () {
    showPokemons(allPokemon.pokemon) 
    clickOnImg(allPokemon.pokemon)
-   //Botón calculadora del a  navbar
+//Botón calculadora del menu  navbar
   document.getElementById("calculator-btn").addEventListener("click",()=>{
   document.getElementById("first-page").style.display="none";
   document.getElementById("second-page").style.display="none";
@@ -204,13 +223,13 @@ document.getElementById("result-btn").addEventListener("click",()=>{
   let resultKm=resultCandys*5;
   document.getElementById("result").value= resultKm;
 }) 
-//Botón contacto del a  navbar
+//Botón contacto del menu navbar
 document.getElementById("contact-btn").addEventListener("click",()=>{
 document.getElementById("first-page").style.display="none";
 document.getElementById("second-page").style.display="none";
 document.getElementById("form-pokemon").style.display="none";
 document.getElementById("contact-form").style.display="block";
-  })
+  })  
  }
  window.onload = runData;
 
