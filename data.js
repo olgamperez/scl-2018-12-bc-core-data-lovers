@@ -1,11 +1,36 @@
 window.pokemones = {
-
-//computeStats(data): la función compute o calcular, nos permitirá hacer cálculos 
-//estadísticos básicos para ser mostrados de acuerdo a la data proporcionada.
-  
-  //computeStats: (data) =>{},
-
-
+//Suma las debilidades (electrico la mas repetida)
+  computeStatsWeak: (data,type) =>{
+    const dataPokemon = data;
+    let sum = 0;
+    dataPokemon.forEach(element =>{
+      if(element.weaknesses.indexOf(type) !== -1){
+        sum++ 
+      }
+    })
+    return sum 
+  },
+  computeStatsWeak: (data,type,type1) =>{
+    const dataPokemon = data;
+    let sum = 0;
+    dataPokemon.forEach(element =>{
+      if(element.type.indexOf(type) !== -1 && element.weaknesses.indexOf(type1) !== -1){
+        sum++ 
+      }
+    })
+    return sum 
+  },
+//Lo oficial de aqui hacia abajo 
+  computeStats: (data,type) =>{
+    const dataPokemon = data;
+    let sum = 0;
+    dataPokemon.forEach(element =>{
+      if(element.type.indexOf(type) !== -1){
+        sum++ 
+      }
+    })
+    return sum 
+  },
 
   filterData: (data,condition) => {
   const dataPokemon = data;
