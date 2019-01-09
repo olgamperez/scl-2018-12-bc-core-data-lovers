@@ -1,169 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/style.css">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-        
-  <body>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <title>PoKePedia</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="fonts/style.css">
+      <link rel="shortcut icon" type="image/x-icon" href="IMG/favicon.ico"/>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
       <nav id="nav-bar">
-          <div class="container nav-wrapper">
+         <div class="container nav-wrapper">
             <a href="#" class="brand-logo">PoKePedia</a>
             <a href="#" data-target="menu-responsive" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-           </a>
+            <i class="material-icons">menu</i>
+            </a>
             <ul class="right hide-on-med-and-down">
-              <li><a id="back-to-initial" href="#">Inicio</a></li>
-              <li><a href="https://pokemongolive.com/es/events/" target="_blank">Eventos</a></li>
-              <li><a href="#" id="calculator-btn">Calculadora</a></li>
-             <li><a href="#" id="contact-btn">Contacto</a></li>
-           </ul>
-           <ul class="sidenav" id="menu-responsive">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
-              <li><a href="#" >Calculadora</a></li>
-              <li><a href="#" >Contacto</a></li>
-           </ul>
+               <li><a id="back-to-initial" href="#">Inicio</a></li>
+               <li><a href="https://pokemongolive.com/es/events/" target="_blank">Eventos</a></li>
+               <li><a href="#" id="calculator-btn">Calculadora</a></li>
+               <li><a href="#" id="contact-btn">Contacto</a></li>
+            </ul>
+            <ul class="sidenav" id="menu-responsive">
+               <li><a href="#">Inicio</a></li>
+               <li><a href="https://pokemongolive.com/es/events/">Eventos</a></li>
+               <li><a href="#" >Calculadora</a></li>
+               <li><a href="#" >Contacto</a></li>
+            </ul>
          </div>
-     </nav>
-
-    <div id="first-page"> 
-    <div id="cover-page">
-      <div class="overlay">
-          <h4>La Wiki Pro de PokemonGo</h4>
-          <h5>En esta página encontrarás información y las características de <br> los 151 pokemones pertenecientes la región de Kanto</h5>
-          <br>
-          <button id="scroll-btn">Desliza para más!</button>
+      </nav>
+      <div id="first-page">
+         <div id="cover-page">
+            <div class="overlay">
+               <h4>La Wiki Pro de PokemonGo</h4>
+               <h5>En esta página encontrarás información y las características de <br> los 151 pokemones pertenecientes la región de Kanto</h5>
+               <br>
+               <button id="scroll-btn">Desliza para más!</button>
+            </div>
+         </div>
+         <br>
+         <div class="container">
+            <div class="row">
+               <div id="select-pokemon" class="col s12 m6">
+                  <select id="select-type-pokemon">
+                     <option value="">Elige Tipo de Pokemon</option>
+                     <option value="Ground">Tierra</option>
+                     <option value="Water">Agua</option>
+                     <option value="Fire">Fuego</option>
+                     <option value="Normal">Normal</option>
+                     <option value="Psychic">Psiquico</option>
+                     <option value="Dragon">Dragón</option>
+                     <option value="Flying">Volador</option>
+                     <option value="Electric">Eléctrico</option>
+                     <option value="Ice">Hielo</option>
+                     <option value="Rock">Roca</option>
+                     <option value="Bug">Bicho</option>
+                     <option value="Grass">Planta</option>
+                     <option value="Poison">Veneno</option>
+                     <option value="Fighting">Lucha</option>
+                     <option value="Ghost">Fantasma</option>
+                     <option value="Dark">Siniestro</option>
+                     <option value="Steel">Acero</option>
+                     <option value="Fairy">Hada</option>
+                  </select>
+               </div>
+               <div id="select-type-order" class="col s12 m6">
+                  <select id="option-order">
+                     <option value="">Ordenar por</option>
+                     <option value="az">A - Z</option>
+                     <option value="za">Z - A</option>
+                     <option value="small-big">Número inferior</option>
+                     <option value="big-small">Número superior</option>
+                  </select>
+               </div>
+               <div id="result-sum"></div>
+            </div>
+            <div id="content" class="row"></div>
+         </div>
+         <div id="div-go-up">
+            <a  class="waves-effect waves-light btn " href="#top"><i class="material-icons right">arrow_upward</i>Subir</a>
+         </div>
       </div>
-    </div>
-    <br>
-    <div class="container">
-      <div class="row">
-      <div id="select-pokemon" class="col s12 m6">
-        <select id="select-type-pokemon">
-            <option value="">Elige Tipo de Pokemon</option>
-            <option name ="Tierra" value="Ground">Tierra</option>
-            <option value="Water">Agua</option>
-            <option value="Fire">Fuego</option>
-            <option value="Normal">Normal</option>
-            <option value="Psychic">Psiquico</option>
-            <option value="Dragon">Dragón</option>
-            <option value="Flying">Volador</option>
-            <option value="Electric">Eléctrico</option>
-            <option value="Ice">Hielo</option>
-            <option value="Rock">Roca</option>
-            <option value="Bug">Bicho</option>
-            <option value="Grass">Planta</option>
-            <option value="Poison">Veneno</option>
-            <option value="Fighting">Lucha</option>
-            <option value="Ghost">Fantasma</option>
-            <option value="Dark">Siniestro</option>
-            <option value="Steel">Acero</option>
-            <option value="Fairy">Hada</option>
-        </select>
-      </div>
-      <div id="select-type-order" class="col s12 m6">
-          <select id="option-order">
-              <option value="">Ordenar por</option>
-              <option value="az">A - Z</option>
-              <option value="za">Z - A</option>
-              <option value="small-big">Número inferior</option>
-              <option value="big-small">Número superior</option>
-          </select>
-      </div>
-          <div id="result-sum"></div>
-      </div>  
-      <div id="content" class="row"></div>
-      </div>
-      <div id="div-go-up">
-        <a  class="waves-effect waves-light btn " href="#top"><i class="material-icons right">arrow_upward</i>Subir</a>
-      </div>
-    </div>
       <br>        
-        <!--2ºPantalla-->
-    <div id="second-page"></div>  
-    <br>
-    <br>
-    <div class="container">
-      <div class="row">
-          <div id="form-pokemon" class="col s12 m6">
-              <form id="my-form">
+      <!--2ºPantalla-->
+      <div id="second-page"></div>
+      <br>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div id="form-pokemon" class="col s12 m6">
+               <form id="my-form">
                   <label class="text-calculator">¿Cuantos candys tienes?</label>
                   <input type="text" id="number1" placeholder="Escribe un número">
                   <br>
-                 <label class="text-calculator">¿Cuántos candys quieres conseguir ?</label>
+                  <label class="text-calculator">¿Cuántos candys quieres conseguir ?</label>
                   <input type="text" id="number2" placeholder="Escribe un número">
                   <label class="text-calculator">Cantidad de Km que deber recorrer</label>
-                 <input type="text" id="result">
+                  <input type="text" id="result">
                   <button type="button" id="result-btn">Calcular</button>
                   <button type="button" id="clear-btn">Limpiar</button>
-             </form>
-         </div>  
-         <div id="contact-form" class="col s12 ">
-           <form id="my-form2">
-             <div class="row card-panel">
-               <div class="input-field col s6">
-                 <input type="text" placeholder="Ingresa nombre" id="name" class="validate" required>
-                 <label for="name">Nombre</label>
-               </div>
-
-               <div class="input-field col s6">
-                  <input type="text" id="lastname" class="validate" required>
-                  <label for="lastname">Apellido</label>
-               </div>
-
-               <div class="input-field col s12">
-                  <input type="email" id="email">
-                  <label for="email">Email</label>
-               </div>
-               <div class="input-field col s12">
-                  <textarea id="coments-area" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
-               </div>
-
-               <button class="btn" type="submit">Enviar</button>
-             </div>     
-           </form>
-         </div> 
+               </form>
+            </div>
+            <div id="contact-form" class="col s12 ">
+               <form id="my-form2">
+                  <div class="row card-panel">
+                     <div class="input-field col s6">
+                        <input type="text" placeholder="Ingresa nombre" id="name" class="validate" required>
+                        <label for="name">Nombre</label>
+                     </div>
+                     <div class="input-field col s6">
+                        <input type="text" id="lastname" class="validate" required>
+                        <label for="lastname">Apellido</label>
+                     </div>
+                     <div class="input-field col s12">
+                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                     </div>
+                     <div class="input-field col s12">
+                        <textarea id="coments-area" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                     </div>
+                     <button class="btn" type="submit">Enviar</button>
+                  </div>
+               </form>
+            </div>
+         </div>
       </div>
-    </div>  
-
-     <!--Empieza el footer-->
+      <!--Empieza el footer-->
       <footer class="page-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Gracias por tu preferencia!</h5>
-              <h6 class="grey-text text-lighten-4">Y no olvides visitar nuestras redes sociales</h6>
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="white-text">Gracias por tu preferencia!</h5>
+                  <h6 class="grey-text text-lighten-4">Y no olvides visitar nuestras redes sociales</h6>
+               </div>
+               <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Links</h5>
+                  <ul id="social-media">
+                     <li><a class="grey-text text-lighten-3" href="http://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
+                     <li><a class="grey-text text-lighten-3" href="http://www.twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
+                     <li><a class="grey-text text-lighten-3" href="http://www.instagram.com" target="_blank"><i class="icon-unsplash"></i></a></li>
+                  </ul>
+               </div>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul id="social-media">
-                <li><a class="grey-text text-lighten-3" href="http://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="http://www.twitter.com" target="_blank"><i class="icon-twitter"></i></a></li>
-                <li><a class="grey-text text-lighten-3" href="http://www.instagram.com" target="_blank"><i class="icon-unsplash"></i></a></li>
-              </ul>
+         </div>
+         <div class="footer-copyright">
+            <div  class="container">
+               © 2018 Copyright Text
+               <a id="space-footer" class="grey-text text-lighten-4 right" href="#!">Acerca de</a>
+               <a class="grey-text text-lighten-4 right" href="#!">Politica de privacidad</a>
             </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div  class="container">
-          © 2018 Copyright Text
-            <a id="space-footer" class="grey-text text-lighten-4 right" href="#!">Acerca de</a>
-            <a class="grey-text text-lighten-4 right" href="#!">Politica de privacidad</a>
-          </div>
-        </div>
-      </footer>     
-    <div id="root"></div>   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+         </div>
+      </footer>
+      <div id="root"></div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="data.js"></script>
+      <script src="main.js"></script>
+   </body>
 </html>
