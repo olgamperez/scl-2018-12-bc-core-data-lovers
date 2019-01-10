@@ -298,8 +298,7 @@ span.card-title{
         min-height: 204px;
     }     
 }
-
-@media screen and (min-width: 700px) and (max-width: 1400px){
+@media screen and (min-width: 850px) and (max-width: 1400px){
     .card .card-title {
         font-size: 15px;
     } 
@@ -318,6 +317,9 @@ span.card-title{
         overflow: hidden;
         background-position:center;
     } 
+    div.col.s6.m3{
+        min-height: 260px;
+    }
     
 }
 @media screen and (max-width: 320px) {
@@ -345,6 +347,6 @@ span.card-title{
         
     }   
    div.col.s6.m3{
-       min-height: 266px;
+       min-height: 284px;
    }
 }
