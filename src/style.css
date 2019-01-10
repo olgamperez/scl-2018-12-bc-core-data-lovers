@@ -248,8 +248,11 @@ span.card-title{
 #calculator-form{
     background-image: url(IMG/pokebola4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
-    /*padding: 18% 0; me sale en la primera pag una franja blanca*/
+    background-size: cover; 
+
+}
+#form-pokemon{
+    padding: 10% 0; 
 }
 #contact-form{
     padding: 9% 0;
@@ -320,6 +323,12 @@ span.card-title{
     div.col.s6.m3{
         min-height: 260px;
     }
+    #cover-page{
+        padding: 23% 0 2% 0;
+    }
+    #form-pokemon{
+        padding: 20% 0;
+    }
     
 }
 @media screen and (max-width: 320px) {
@@ -349,4 +358,18 @@ span.card-title{
    div.col.s6.m3{
        min-height: 284px;
    }
+}
+@media screen and (min-width:1400px){
+    #cover-page{
+        padding: 23% 0 2% 0;
+    }
+    #form-pokemon{
+        padding: 20% 0;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
 }
