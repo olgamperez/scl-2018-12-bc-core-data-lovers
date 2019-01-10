@@ -2,17 +2,34 @@
 document.addEventListener("DOMContentLoaded", function(){
  window.M.AutoInit();
 });
-//Volver al inicio apretando inicio en el menú de nav
+//Volver al inicio apretando inicio en el menú 
 document.getElementById("back-to-initial").addEventListener("click", () => {
   document.location = "index.html";
 })
-
+ //Volver al inicio apretando inicio en el menú responsive
+ document.getElementById("back-to-initial-responsive").addEventListener("click", () => {
+  document.location = "index.html";
+  }) 
+//Botón calculadora del a  navbar responsive
+ document.getElementById("calculator-btn-responsive").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("contact-form").style.display="none";
+  document.getElementById("form-pokemon").style.display="block";
+}) 
+//Botón contacto del a  navbar responsive
+document.getElementById("contact-btn-responsive").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("form-pokemon").style.display="none";
+  document.getElementById("contact-form").style.display="block";
+})  
 //Manejo del cálculo 
 document.getElementById("select-type-pokemon").addEventListener("change", () => {
   document.getElementById("result-sum").innerHTML = "";
   let type = document.getElementById("select-type-pokemon").value;
   document.getElementById("result-sum").innerHTML = `
-  <p>Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto </p>`;
+  <h5>Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto</h5>`;
 
   });
  
@@ -30,9 +47,14 @@ function clickOnImg (data) {
       pokemonImages[i].addEventListener("click",() =>{
         document.getElementById("first-page").style.display="none";
         document.getElementById("second-page").style.display="block";
-       // const second = document.querySelector("#second-page")
         document.getElementById("second-page").innerHTML +=`
-        <div id="name-number" class="card-panel teal grey"><span class="white-text" ><p class="flow-text">${data[i].name} Nº ${data[i].num}</p></span></div>
+        <div class="container>
+          <div class="row">
+            <div id="name-number" class="col s12 m12">
+              <div  class="card-panel teal grey"><span class="white-text" ><p class="flow-text">${data[i].name} Nº ${data[i].num}</p></span></div>
+            </div>
+          </div>
+        </div>
         <div class="container">
         <div class="row">
             <div class="col s12 m6">
@@ -99,9 +121,11 @@ function clickOnImg (data) {
               </div>
            </div>    
           </div>
-          <div id="btn-go-back">
-              <a href="" class="waves-effect waves-light btn">Volver al Inicio</a>
-          </div>
+            <div class="row">
+            <div id="btn-go-back">
+                <a href="" class="waves-effect waves-light btn">Volver al Inicio</a>
+            </div>
+            </div>
         </div>  
         </div>   
         `
@@ -123,14 +147,14 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
           content.innerHTML +=`
             <div class="col s6 m3">
               <div id="card1" class="card">
-                <div  id="images" class="card-image">
+                <div  id="images" class="card-image responsive-img">
                   <img class="img-pokemon responsive-img" src= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${valor.num}.png">
                 </div>
                 <div class="card-content">
                   <p class="pokenumber">Nº ${valor.num}</p>
                   <span class="card-title ">${valor.name}</span>
-                  <span class="tagsize ${valor.type[0]}">${valor.type[0]}</span>
-                  <span class="tagsize ${valor.type[1]}">${valor.type[1]}</span>
+                  <span class="tagsize ${valor.type[0]} ">${valor.type[0]}</span>
+                  <span class="tagsize ${valor.type[1]} ">${valor.type[1]}</span>
                 </div>
               </div>
             </div> 
@@ -140,6 +164,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
   }
   //Manejo de la función ordenar
   document.getElementById("option-order").addEventListener("change", () => {
+    document.getElementById("text-result-sum").innerHTML = "";
     content.innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
@@ -163,6 +188,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
     }
     if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
+          document.getElementById("text-result-sum").innerHTML = "";
           content.innerHTML +=`
            <div class="col s6 m3">
               <div id="card1" class="card">
@@ -185,7 +211,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
  function runData () {
    showPokemons(allPokemon.pokemon) 
    clickOnImg(allPokemon.pokemon)
-   //Botón calculadora del a  navbar
+//Botón calculadora del menu  navbar
   document.getElementById("calculator-btn").addEventListener("click",()=>{
   document.getElementById("first-page").style.display="none";
   document.getElementById("second-page").style.display="none";
@@ -204,13 +230,13 @@ document.getElementById("result-btn").addEventListener("click",()=>{
   let resultKm=resultCandys*5;
   document.getElementById("result").value= resultKm;
 }) 
-//Botón contacto del a  navbar
+//Botón contacto del menu navbar
 document.getElementById("contact-btn").addEventListener("click",()=>{
 document.getElementById("first-page").style.display="none";
 document.getElementById("second-page").style.display="none";
 document.getElementById("form-pokemon").style.display="none";
 document.getElementById("contact-form").style.display="block";
-  })
+  })  
  }
  window.onload = runData;
 
