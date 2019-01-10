@@ -72,17 +72,21 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
     assert.deepStrictEqual([numberMenor[0].id, numberMenor[1].id, numberMenor[2].id, numberMenor[3].id],[1,2,3,4]);
   });})
 
- // describe('pokemon.computeStats', () => {
- //   it('Debería ser una función', () => {
- //    assert.equal(typeof window.pokemones.computeStats,'function');
- //   });
- //   
- // it('Deberia retornar 3 para la cantidad de pokemon de tipo fuego', ()=>{
- //   let computePokemonFire= window.pokemones.computeStats(dataTest)
- //     assert.lengthOf(computePokemonFire.type, 12,'Hay 12 pokemones de fuego')
- //    })
+describe('pokemon.computeStats', () => {
+  it('Debería ser una función', () => {
+   assert.equal(typeof window.pokemones.computeStats,'function');
+  });
+  
+it('Deberia retornar 12 para la cantidad de pokemon de tipo fuego', ()=>{
+  let computePokemonFire= window.pokemones.computeStats(dataTest, 'Fire')
+    assert.ok(computePokemonFire, 12)
+   });
+   it('Deberia retornar 14 para la cantidad de pokemon de tipo psiquico', ()=>{
+    let computePokemonFire= window.pokemones.computeStats(dataTest, 'Psychic')
+      assert.ok(computePokemonFire, 14)
+     });  
 
-})//})
+})})
 //guardando
 //const dataOrderTest = [
 // {
