@@ -48,7 +48,9 @@ Incluye información específica y detallada de cada pokemon, tal como: nombre y
 
 ![Visualización](IMG/terceraVista.png)
 
+
 Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
+
 
 ##### La pantalla principal se ve de la siguiente manera:
 
@@ -89,6 +91,8 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
+
+
 ![Visualización](IMG/Visualizar.png)
 
 ### Prototipado:
@@ -111,7 +115,7 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-![Flujo para filtrar la información](IMG/Filtrado.png)
+Inline-style: alt text ![Flujo para filtrar la información](IMG/Filtrado.png)
 
 ### Prototipado:
 #### Seleccionando el tipo
