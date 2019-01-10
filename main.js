@@ -188,7 +188,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
     }
     if (document.getElementById("option-order").value === "small-big" || document.getElementById("option-order").value === "big-small"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"num",document.getElementById("option-order").value)){
-          document.getElementById("text-result-sum").innerHTML = "";
+          document.getElementById("result-sum").innerHTML = "";
           content.innerHTML +=`
            <div class="col s6 m3">
               <div id="card1" class="card">
