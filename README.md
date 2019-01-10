@@ -46,9 +46,10 @@ Además incluye un hover que al hacer "Click" redirige a la descripción de cada
 3era. Vista:
 Incluye información específica y detallada de cada pokemon, tal como: nombre y número (en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
 
+<center> 
 
 ![Vista por pokemon](IMG/terceraVista.png)
-
+</center> 
 
 Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
 
@@ -77,9 +78,10 @@ Una vez definido el tema del proyecto se realizó una lluvia de ideas para la id
 
 ![Prototipo de baja fidelidad](IMG/Pbajafidelidad.png)
 
+<center> 
 
 ## Caso # 1: (Visualizar información General)
- 
+</center> 
 
 - Nicolás tiene 15 años y acaba de descargar pokemonGO por recomendación de un amigo a quien observo jugando. Él nunca ha visto la serie pokemón, solo conoce a los más populares por lo que ingresa a la pagina para conocerlos mejor.
 
@@ -93,13 +95,17 @@ Definición de terminado:
 - Seleccionar la imagen de un pokemon podrá acceder a información más detallada.
 
 ### Flujo de interacción:
- 
+
+<center> 
+
 ![Flujo del proceso de vizualización](IMG/Visualizar.png)
+</center> 
 
 ### Prototipado:
- 
-![Prototipo 1](IMG/prototipoCaso1.png)
+<center> 
 
+![Prototipo 1](IMG/prototipoCaso1.png)
+</center> 
 
 ## Caso # 2: (Filtrar información)
 
@@ -117,16 +123,28 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
+<center> 
+
  ![Flujo para filtrar la información](IMG/Filtrado.png)
+
+</center> 
 
 ### Prototipado:
 #### Seleccionando el tipo
 
+<center> 
+
 ![Prototipo 2](IMG/selectfiltrar.png)
+</center> 
+
 
 #### Vista resultado de filtar por tipo "Planta".
 
+<center> 
+
 ![Filtrado](IMG/prototipoCaso2.png)
+</center> 
+
 
 ## Caso # 3 (Ordenar información)
 
@@ -145,19 +163,26 @@ Definición de terminado:
 - Pueda ordenar los pokemon por número de menor a mayor.
 
 ### Flujo de interacción:
+<center> 
 
 ![Flujo para ordenar la información](IMG/Ordenado.png)
 
-### Prototipado:
+</center> 
 
+### Prototipado:
 #### Seleccionando el orden
 
+<center> 
+
 ![Ordenado](IMG/selectorden.png)
+</center> 
 
 #### Vista del resultado de ordenar por "Número inferior"
 
-![Prototipo 3](IMG/prototipoCaso3.png)
+<center> 
 
+![Prototipo 3](IMG/prototipoCaso3.png)
+</center> 
 
 ## Caso # 4: (Cálculos)
 
@@ -176,17 +201,18 @@ Definición de terminado:
 - Calcular en cuantos candys evoluciona mi pokemon
 
 ### Flujo de interacción:
+<center> 
 
 ![Flujo para realizar el calculo](IMG/calcular.png)
-
+</center> 
 
 ### Prototipado:
-
 #### Calculadora
+<center> 
 
 ![Prototipo 4](IMG/prototipoCalculadora.png)
 
-
+</center> 
 ## Caso # 5: (Búsqueda) (Opcional)
 
 Javier tiene 20 años y es usuario de la aplicación pokemonGO, él quiere seguir aumentando de nivel en el juego y para esto planea asistir a un evento en el Parque Forestal, donde dicen podrá capturar a Pikachu. Javier decide ir preparado a este encuentro y así asegurarse la captura de este pokemon. Por lo que decide reunir toda la información posible acerca de Pikachu.
@@ -208,9 +234,11 @@ Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad 
 - Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones;  Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon.
 
 ***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios.
+<center> 
 
 ![Entrevista a Jose R.](IMG/entrevista1.jpg)
 
+</center> 
 - Entrevistado Alex Sabattin: Tiene 26 años de edad y es un jugador novato pero se ha relacionado anteriormente con las series de pokemon por lo que se le hacen familiar todos los nombres e imágenes. Al presentarle el prototipo y darle las tareas logró manejarlas muy bien, tanto el filtrado y el ordenado de la información. Realizó algunas sugerencia acerca de la información mostrada pero correspondía al manejo de la data previamente cargada en el proyecto.
 
 ![Entrevista a Jose R.](IMG/entrevista2.jpg)
