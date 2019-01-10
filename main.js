@@ -26,10 +26,10 @@ document.getElementById("contact-btn-responsive").addEventListener("click",()=>{
 })  
 //Manejo del cálculo 
 document.getElementById("select-type-pokemon").addEventListener("change", () => {
-  document.getElementById("text-result-sum").innerHTML = "";
+  document.getElementById("result-sum").innerHTML = "";
   let type = document.getElementById("select-type-pokemon").value;
-  document.getElementById("text-result-sum").innerHTML = `
-  Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto`;
+  document.getElementById("result-sum").innerHTML = `
+  <h5>Existen ${window.pokemones.computeStats(allPokemon.pokemon,type)} pokemones del tipo ${type} en la región de Kanto</h5>`;
 
   });
  
@@ -47,9 +47,14 @@ function clickOnImg (data) {
       pokemonImages[i].addEventListener("click",() =>{
         document.getElementById("first-page").style.display="none";
         document.getElementById("second-page").style.display="block";
-       // const second = document.querySelector("#second-page")
         document.getElementById("second-page").innerHTML +=`
-        <div id="name-number" class="card-panel teal grey"><span class="white-text" ><p class="flow-text">${data[i].name} Nº ${data[i].num}</p></span></div>
+        <div class="container>
+          <div class="row">
+            <div id="name-number" class="col s12 m12">
+              <div  class="card-panel teal grey"><span class="white-text" ><p class="flow-text">${data[i].name} Nº ${data[i].num}</p></span></div>
+            </div>
+          </div>
+        </div>
         <div class="container">
         <div class="row">
             <div class="col s12 m6">
@@ -116,9 +121,11 @@ function clickOnImg (data) {
               </div>
            </div>    
           </div>
-          <div id="btn-go-back">
-              <a href="" class="waves-effect waves-light btn">Volver al Inicio</a>
-          </div>
+            <div class="row">
+            <div id="btn-go-back">
+                <a href="" class="waves-effect waves-light btn">Volver al Inicio</a>
+            </div>
+            </div>
         </div>  
         </div>   
         `
@@ -140,14 +147,14 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
           content.innerHTML +=`
             <div class="col s6 m3">
               <div id="card1" class="card">
-                <div  id="images" class="card-image">
+                <div  id="images" class="card-image responsive-img">
                   <img class="img-pokemon responsive-img" src= "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${valor.num}.png">
                 </div>
                 <div class="card-content">
                   <p class="pokenumber">Nº ${valor.num}</p>
                   <span class="card-title ">${valor.name}</span>
-                  <span class="tagsize ${valor.type[0]}">${valor.type[0]}</span>
-                  <span class="tagsize ${valor.type[1]}">${valor.type[1]}</span>
+                  <span class="tagsize ${valor.type[0]} ">${valor.type[0]}</span>
+                  <span class="tagsize ${valor.type[1]} ">${valor.type[1]}</span>
                 </div>
               </div>
             </div> 
