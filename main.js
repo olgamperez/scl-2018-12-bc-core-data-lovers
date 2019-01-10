@@ -164,7 +164,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
   }
   //Manejo de la función ordenar
   document.getElementById("option-order").addEventListener("change", () => {
-    document.getElementById("text-result-sum").innerHTML = "";
+    document.getElementById("result-sum").innerHTML = "";
     content.innerHTML = "";
     if (document.getElementById("option-order").value === "az" || document.getElementById("option-order").value === "za"){
         for (let valor of window.pokemones.sortData(allPokemon.pokemon,"name",document.getElementById("option-order").value)){
