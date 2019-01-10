@@ -1,6 +1,6 @@
 # PokepediaGo
 
-![Visualización](IMG/leslie.png)
+![Imagen Principal](IMG/leslie.png)
 
 # PROLOGO:
 
@@ -29,7 +29,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 - d)Contacto:Muestra información del contacto de los desarrolladores de la pagina web en caso de solicitar alguna información y/o emitir opinión.
 
 Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon así como también el logo oficial.
-![Visualización](IMG/logo.png)
+![Logo de Pokepedia](IMG/logo.png)
 
 Se le integro una breve descripción de lo que el usuario encontrara en la pagina y un botón scroll "Desliza para más!" 
 
@@ -46,7 +46,7 @@ Además incluye un hover que al hacer "Click" redirige a la descripción de cada
 3era. Vista:
 Incluye información específica y detallada de cada pokemon, tal como: nombre y número (en la parte superior), breve descripción de la criatura, un recuadro con el tiempo de aparición, Egg, altura, % aparición, peso, evolución, debilidades y tipo; así como también las imágenes evolucionadas del mismo.
 
-![Visualización](IMG/terceraVista.png)
+![Vista por pokemon](IMG/terceraVista.png)
 
 
 Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
@@ -54,27 +54,27 @@ Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista ant
 
 ##### La pantalla principal se ve de la siguiente manera:
 
-![Visualización](IMG/pantallaPrincipal.png)
+![Visualización Principal](IMG/pantallaPrincipal.png)
 
 ## HISTORIA DE USUARIOS Y PROTOTIPOS DE USABILIDAD:
 
-Una vez definido el tema del proyecto se realizo en primera instancia los sketch; a partir del cual se inicia el prototipo de baja fidelidad con Figma (aplicación de diseño de interfaces ), recibiendo feedback tanto del propio squad como de algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de alta fidelidad elaborado en la misma herramienta (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
+Una vez definido el tema del proyecto se realizó una lluvia de ideas para la ideación a través de los sketch; a partir del cual se inicia el prototipo de baja fidelidad con Figma (aplicación de diseño de interfaces ), recibiendo feedback tanto del propio squad como de algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de alta fidelidad elaborado en la misma herramienta (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
 
 ### - Sketch 1. Pantalla principal
 
-![Visualización](IMG/sketch1.png)
+![Sketch 1](IMG/sketch1.png)
 
 ### - Sketch 2. Pantalla Filtrar/ Ordenar
 
-![Visualización](IMG/sketch2.png)
+![Sketch 2](IMG/sketch2.png)
 
 ### - Sketch 3. Pantalla Calculo
 
-![Visualización](IMG/sketch3.png)
+![Sketch 3](IMG/sketch3.png)
 
 ### - Prototipo de baja fidelidad
 
-![Visualización](IMG/Pbajafidelidad.png)
+![Prototipo de baja fidelidad](IMG/Pbajafidelidad.png)
 
 ## Caso # 1: (Visualizar información General)
 
@@ -93,11 +93,11 @@ Definición de terminado:
 
 
 
-![Visualización](IMG/Visualizar.png)
+![Flujo del proceso de vizualización](IMG/Visualizar.png)
 
 ### Prototipado:
 
-![Visualización](IMG/prototipoCaso1.png)
+![Prototipo 1](IMG/prototipoCaso1.png)
 
 ## Caso # 2: (Filtrar información)
 
@@ -117,13 +117,15 @@ Definición de terminado:
 
 Inline-style: alt text ![Flujo para filtrar la información](IMG/Filtrado.png)
 
+
+
 ### Prototipado:
 #### Seleccionando el tipo
-![Visualización](IMG/selectfiltrar.png)
+![Prototipo 2](IMG/selectfiltrar.png)
 
 #### Vista resultado de filtar por tipo "Planta".
 
-![Visualización](IMG/prototipoCaso2.png)
+![Filtrado](IMG/prototipoCaso2.png)
 
 ## Caso # 3 (Ordenar información)
 
@@ -147,11 +149,11 @@ Definición de terminado:
 
 ### Prototipado:
 #### Seleccionando el orden
-![Visualización](IMG/selectorden.png)
+![Ordenado](IMG/selectorden.png)
 
 #### Vista del resultado de ordenar por "Número inferior"
 
-![Visualización](IMG/prototipoCaso3.png)
+![Prototipo 3](IMG/prototipoCaso3.png)
 
 ## Caso # 4: (Cálculos)
 
@@ -176,7 +178,7 @@ Definición de terminado:
 ### Prototipado:
 #### Calculadora
 
-![Visualización](IMG/prototipoCalculadora.png)
+![Prototipo 4](IMG/prototipoCalculadora.png)
 
 ## Caso # 5: (Búsqueda) (Opcional)
 
@@ -191,3 +193,25 @@ Definición de terminado:
 - Que exista un Buscador
 - Buscar por nombre
 - Buscar por número
+
+### MEJORAS REALIZADAS POR EL USO DE LOS TEST  DE USABILIDAD:
+
+Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad a dos jugadores frecuentes de pokemon y se obtuvo feedback de algunas compañeras lo que permitió realizar las siguiente mejoras:
+
+- Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones;  Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon.
+
+***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios.
+
+![Entrevista a Jose R.](IMG/entrevista1.jpg)
+
+- Entrevistado Alex Sabattin: Tiene 26 años de edad y es un jugador novato pero se ha relacionado anteriormente con las series de pokemon por lo que se le hacen familiar todos los nombres e imágenes. Al presentarle el prototipo y darle las tareas logró manejarlas muy bien, tanto el filtrado y el ordenado de la información. Realizó algunas sugerencia acerca de la información mostrada pero correspondía al manejo de la data previamente cargada en el proyecto.
+
+![Entrevista a Jose R.](IMG/entrevista2.jpg)
+
+- Feedback de algunas compañeras: En esta actividad ha sido de mucho beneficio en cuanto a que permitió notar lo siguiente:
+
+1. Los colores de fondo según lo manifestaron durante el feedback era muy oscuro lo que ocasionaba un fuerte contraste y que junto al resto de las imágenes resultaba agotador para la vista.
+
+2. En algunas de las etiquetas de los tipos, los colores eran muy claros con letras blancas y pequeñas dificultando la lectura, se mejoró tanto la letra y se intensifico un poco el color de cada una de las etiquetas del “tipo” de pokemon.
+
+3. Al principio se tenia como imagen principal la oficial de Pokemon y esto ocasionaba que las personas relacionaran la pagina de Pokepedia con la marca de pokemon y no a lo que realmente era el fin de la misma; se cambio la imagen actual y se agregó el logo, con este cambio se logró sacar esa idea enfocándose en Pokepedia como pagina informativa.
