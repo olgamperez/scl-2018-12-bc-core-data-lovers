@@ -26,7 +26,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 - a) Inicio: Representa la pagina principal del proyecto al hacer "Click" en ella regresa al usuario a esta.
 - b) Eventos: Permite el acceso a la pagina oficial de eventos de pokemon https://pokemongolive.com/es/events/.
 - c) Calculadora: Muestra una pequeña calculadora que permite realizar el calculo de los Km necesarios a recorrer para completar los "Candys" para evolucionar a un pokemon.
-- d)Contacto:Muestra información del contacto de los desarrolladores de la pagina web en caso de solicitar alguna información y/o emitir opinión.
+- d) Contacto: Permite solicitar alguna información y/o emitir opinión a los desarrolladores a través de un correo electrónico.
 
 Por otro lado, se puede visualizar debajo de la barra de navegación la imagen principal de la pagina alusiva a Pokemon así como también el logo oficial.
 ![Logo de Pokepedia](IMG/logo.png)
