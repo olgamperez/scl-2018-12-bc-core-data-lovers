@@ -18,7 +18,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;  
     overflow: hidden;
-    padding: 9% 0 2% 0;
+    padding: 20% 0 2% 0;
     background-position: 0% 50%;
   }
 #cover-page .overlay{
@@ -249,10 +249,12 @@ span.card-title{
     background-image: url(IMG/pokebola4.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
-    /*padding: 18% 0; me sale en la primera pag una franja blanca*/
+}
+#form-pokemon {
+    padding: 20% 0;
 }
 #contact-form{
-    padding: 9% 0;
+    padding: 13% 0;
 }
 .tables{
     background-color: #bdbdbd ;
@@ -299,7 +301,7 @@ span.card-title{
     }     
 }
 
-@media screen and (min-width: 700px) and (max-width: 1400px){
+@media screen and (min-width: 850px) and (max-width: 1400px){
     .card .card-title {
         font-size: 15px;
     } 
@@ -348,3 +350,16 @@ span.card-title{
        min-height: 266px;
    }
 }
+@media screen and (min-width:1400px){
+    #cover-page{
+        padding: 20% 0 2% 0;
+    }
+    #form-pokemon{
+        padding: 20% 0;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }}
