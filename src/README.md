@@ -8,7 +8,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 
 • Ubicar y visualizar en primera instancia de forma fácil y sencilla utilizando la imagen de cada criatura, el nombre y/o número de identificación.
 
-• Cuando el usuario encuentre el pokemon de su interés al hacer Click"  en la imagen podrá ver la información detallada basándose en sus debilidades, tipo, peso, evolución entre otras. 
+• Cuando el usuario encuentre el pokemon de su interés al hacer Click" en la imagen podrá ver la información detallada basándose en sus debilidades, tipo, peso, evolución entre otras. 
 
 • Se da la opción de filtrar información según el tipo de pokemon y estará categorizada en un menú desplegable para facilitar su accesibilidad.
 
@@ -48,9 +48,7 @@ Incluye información específica y detallada de cada pokemon, tal como: nombre y
 
 ![Vista por pokemon](IMG/terceraVista.png)
 
-
 Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista anterior y muestra la nueva. 
-
 
 ##### La pantalla principal se ve de la siguiente manera:
 
@@ -90,13 +88,9 @@ Definición de terminado:
 - Seleccionar la imagen de un pokemon podrá acceder a información más detallada.
 
 ### Flujo de interacción:
-
-
-
 ![Flujo del proceso de vizualización](IMG/Visualizar.png)
 
 ### Prototipado:
-
 ![Prototipo 1](IMG/prototipoCaso1.png)
 
 ## Caso # 2: (Filtrar información)
@@ -115,12 +109,11 @@ Definición de terminado:
 
 ### Flujo de interacción:
 
-Inline-style: alt text ![Flujo para filtrar la información](IMG/Filtrado.png)
-
-
+![Flujo para filtrar la información](IMG/Filtrado.png)
 
 ### Prototipado:
 #### Seleccionando el tipo
+
 ![Prototipo 2](IMG/selectfiltrar.png)
 
 #### Vista resultado de filtar por tipo "Planta".
@@ -148,7 +141,9 @@ Definición de terminado:
 ![Flujo para ordenar la información](IMG/Ordenado.png)
 
 ### Prototipado:
+
 #### Seleccionando el orden
+
 ![Ordenado](IMG/selectorden.png)
 
 #### Vista del resultado de ordenar por "Número inferior"
@@ -176,6 +171,7 @@ Definición de terminado:
 ![Flujo para realizar el calculo](IMG/calcular.png)
 
 ### Prototipado:
+
 #### Calculadora
 
 ![Prototipo 4](IMG/prototipoCalculadora.png)
@@ -194,11 +190,11 @@ Definición de terminado:
 - Buscar por nombre
 - Buscar por número
 
-### MEJORAS REALIZADAS POR EL USO DE LOS TEST  DE USABILIDAD:
+### MEJORAS REALIZADAS POR EL USO DE LOS TEST DE USABILIDAD:
 
 Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad a dos jugadores frecuentes de pokemon y se obtuvo feedback de algunas compañeras lo que permitió realizar las siguiente mejoras:
 
-- Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones;  Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon.
+- Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones; Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon.
 
 ***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios.
 
