@@ -228,9 +228,11 @@ span.card-title{
 }
 #form-pokemon{
     display: none; 
+    padding: 5% 0; 
 }
 #contact-form{
     display: none;
+    padding: 9% 0;
 }
 #coments-area{
     width: 100%;
@@ -242,20 +244,12 @@ span.card-title{
     color: #616161;
 }
 .text-calculator ,h5{
-    color: #616161;
-    
+    color: #616161;  
 }
 #calculator-form{
     background-image: url(IMG/pokebola4.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-
-}
-#form-pokemon{
-    padding: 10% 0; 
-}
-#contact-form{
-    padding: 9% 0;
 }
 .tables{
     background-color: #bdbdbd ;
@@ -277,7 +271,6 @@ span.card-title{
 #space-footer{
     margin-left: 60px;
 }
-
 .footer-copyright a:hover{
     text-decoration: underline;
 }
@@ -330,10 +323,10 @@ span.card-title{
 }
 @media screen and (max-width: 375px) {
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     } 
     #scroll-btn{
         font-size: 0.9rem;

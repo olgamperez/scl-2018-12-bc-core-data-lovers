@@ -14,7 +14,7 @@ El objetivo principal de este proyecto es realizar una herramienta que le permit
 
 • El sitio permitirá ordenar por nombre de forma alfabética y numérica(ascendente o descendente).
 
-• Se da la opción al Pokemon Trainer de ingresar la cantidad de “Candys” necesarios para la evolución de su compañero y a través de la calculadora le indicara cuantos Km debe recorrer para alcanzar su objetivo.
+• Se da la opción al Pokemon Trainer de ingresar la cantidad de "Candys" necesarios para la evolución de su compañero y a través de la calculadora le indicara cuantos Km debe recorrer para alcanzar su objetivo.
 
 • Además se podrá implementar un buscador donde se escriba; bien sea el nombre del pokemon o también su número de identificación y accederá a toda la información de manera individual.
 
@@ -130,7 +130,7 @@ Definición de terminado:
 
 Definición de terminado: 
 
-- Que exista un “Select” con sus categorías
+- Que exista un "Select" con sus categorías
 - Pueda ordenar los nombres de la A-Z.
 - Pueda ordenar los nombres de la Z-A.
 - Pueda ordenar los pokemon por número de mayor a menor.
@@ -155,7 +155,7 @@ Definición de terminado:
 - Juana es una chica fitness y últimamente se ha vuelto una aficionada al juego pokemonGo ya que descubrió la forma de entrenar y avanzar en el juego, pero desea conocer cuanto kilómetros necesita recorrer diarios para evolucionar a su pokemon preferido. 
 
 • Como: Deportista fitnes y jugadora de pokemon
-• Quiero: Calcular cuantos Km necesito recorrer para conseguir “Candys”
+• Quiero: Calcular cuantos Km necesito recorrer para conseguir "Candys"
 • Para: Fijar los kilometros a caminar y evolucionar a mi pokemon.
 
 Definición de terminado: 
@@ -196,9 +196,7 @@ Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad 
 
 - Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones; Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon. También algunas de las etiquetas de los tipos, los colores son muy claros con letras blancas y pequeñas dificultando la lectura.
 
-
-
-***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios. Por otro lado, se mejoró la letra y se intensificó un poco el color de cada una de las etiquetas del “tipo” de pokemon. Para ello se utilizo como referencia los logos oficiales de Pokemon Go (ver imagen).
+***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios. Por otro lado, se mejoró la letra y se intensificó un poco el color de cada una de las etiquetas del "tipo" de pokemon. Para ello se utilizo como referencia los logos oficiales de Pokemon Go (ver imagen).
 
 ![Colores oficiales](IMG/colorEtiqueta.jpg)
 
