@@ -242,8 +242,7 @@ span.card-title{
     color: #616161;
 }
 .text-calculator ,h5{
-    color: #616161;
-    
+    color: #616161;  
 }
 #calculator-form{
     background-image: url(IMG/pokebola4.jpg);
@@ -330,10 +329,10 @@ span.card-title{
 }
 @media screen and (max-width: 375px) {
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     h2{
-        font-size: 1.5rem;
+        font-size: 1rem;
     } 
     #scroll-btn{
         font-size: 0.9rem;
