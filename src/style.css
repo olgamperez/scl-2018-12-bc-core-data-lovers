@@ -18,7 +18,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;  
     overflow: hidden;
-    padding: 20% 0 2% 0;
+    padding: 9% 0 2% 0;
     background-position: 0% 50%;
   }
 #cover-page .overlay{
@@ -248,13 +248,14 @@ span.card-title{
 #calculator-form{
     background-image: url(IMG/pokebola4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover; 
+
 }
-#form-pokemon {
-    padding: 20% 0;
+#form-pokemon{
+    padding: 10% 0; 
 }
 #contact-form{
-    padding: 13% 0;
+    padding: 9% 0;
 }
 .tables{
     background-color: #bdbdbd ;
@@ -288,7 +289,6 @@ span.card-title{
 .row{
     margin-bottom: 0;
 }
-
 @media screen and (max-width: 850px) {
     .card .card-content{
         padding: 4px;
@@ -297,62 +297,94 @@ span.card-title{
         font-size: 15px;
     }
     div.col.s6.m3{
-        min-height: 204px;
-    }     
+        min-height: 120px;
+    }  
+    div.card-content{
+        min-height: 100px;
+        margin-left: 4%;
+    } 
 }
-
-@media screen and (min-width: 850px) and (max-width: 1400px){
+@media screen and (min-width: 1024px) and (max-width: 1400px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
     .card .card-title {
         font-size: 15px;
     } 
     .card .card-content{
-        padding: 12px;
+        padding: 10px;
     } 
-    #cover-page{   
-        background: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),
-        url(IMG/leslie.png);
-        background-size: cover;
-        background-repeat: no-repeat;  
-        overflow: hidden;
-        background-position:center;
-    } 
-    
-}
-@media screen and (max-width: 320px) {
-    h1{
-        font-size: 3rem;
+    #cover-page{
+        padding: 23% 0 2% 0;
     }
+    #form-pokemon{
+        padding: 20% 0;
+    }
+    div.card-content{
+        min-height: 110px;
+        padding: 2% 0;
+    }  
+}
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    } 
+    #scroll-btn{
+        font-size: 0.9rem;
+    }  
+    .card .card-title {
+        font-size: 13px;   
+    }  
+    div.col.s6.m3{
+        min-height: 274px;
+    } 
+    div.card-content{
+        min-height: 100px;
+        margin-bottom: 4%;
+        padding: 2% 0;
+    }  
+}
+@media screen and (min-width: 750px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    } 
+    #scroll-btn{
+        font-size: 0.9rem;
+    }  
+    .card .card-title {
+        font-size: 16px;   
+    }  
+   div.col.s6.m3{
+       min-height: 274px;
+   }
+}
+@media screen and (min-width: 853px) and (max-width: 1079px){
     .card .card-content{
         padding: 4px;
     }  
     .card .card-title {
-        font-size: 13px;    
+        font-size: 15px;
     }
-    .flow-text {
-        font-size: 1.8rem;
-    }   
-    #cover-page{   
-        background: 
-        linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),
-        url(IMG/leslie.png); 
-        background-repeat:no-repeat;
-        background-size:cover;
-        
-    }   
-   div.col.s6.m3{
-       min-height: 266px;
-   }
+    div.col.s6.m3{
+        min-height: 120px;
+    }  
+    div.card-content{
+        min-height: 100px;
+        margin-left: 4%;
+    } 
 }
 @media screen and (min-width:1400px){
     #cover-page{
-        padding: 20% 0 2% 0;
+        padding: 23% 0 2% 0;
     }
     #form-pokemon{
         padding: 20% 0;
@@ -362,4 +394,5 @@ span.card-title{
     }
     h2{
         font-size: 2.5rem;
-    }}
+    }
+}
