@@ -56,7 +56,7 @@ Ninguna de las vistas generan documento de HTML nuevo, solo ocultan la vista ant
 
 ## HISTORIA DE USUARIOS Y PROTOTIPOS DE USABILIDAD:
 
-Una vez definido el tema del proyecto se realizó una lluvia de ideas para la ideación a través de los sketch; a partir del cual se inicia el prototipo de baja fidelidad con Figma (aplicación de diseño de interfaces ), recibiendo feedback tanto del propio squad como de algunas compañeras del Boopcamp, luego fue plasmado en un prototipo de alta fidelidad elaborado en la misma herramienta (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
+Una vez definido el tema del proyecto se realizó una lluvia de ideas para la ideación a través de los sketch; a partir del cual se inicia el prototipo de baja fidelidad con ***Figma*** (aplicación de diseño de interfaces ), recibiendo feedback tanto del propio squad como de algunas compañeras del Boopcamp, luego fue plasmado en un [prototipo de alta fidelidad](https://www.figma.com/file/bAKHF1b9fnDx9vjgS3YrV47P/Prototipo1?node-id=0%3A1) elaborado en la misma herramienta (Ver imagen en cada historia de usuario) y al cual se le aplico a través de entrevista de usuario algunos cambios.
 
 ### - Sketch 1. Pantalla principal
 
@@ -198,16 +198,50 @@ Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad 
 
 ***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios.
 
-![Entrevista a Jose R.](IMG/entrevista1.jpg)
 
 - Entrevistado Alex Sabattin: Tiene 26 años de edad y es un jugador novato pero se ha relacionado anteriormente con las series de pokemon por lo que se le hacen familiar todos los nombres e imágenes. Al presentarle el prototipo y darle las tareas logró manejarlas muy bien, tanto el filtrado y el ordenado de la información. Realizó algunas sugerencia acerca de la información mostrada pero correspondía al manejo de la data previamente cargada en el proyecto.
 
-![Entrevista a Jose R.](IMG/entrevista2.jpg)
 
 - Feedback de algunas compañeras: En esta actividad ha sido de mucho beneficio en cuanto a que permitió notar lo siguiente:
 
 1. Los colores de fondo según lo manifestaron durante el feedback era muy oscuro lo que ocasionaba un fuerte contraste y que junto al resto de las imágenes resultaba agotador para la vista.
 
-2. En algunas de las etiquetas de los tipos, los colores eran muy claros con letras blancas y pequeñas dificultando la lectura, se mejoró tanto la letra y se intensifico un poco el color de cada una de las etiquetas del “tipo” de pokemon.
+2. En algunas de las etiquetas de los tipos, los colores eran muy claros con letras blancas y pequeñas dificultando la lectura, se mejoró tanto la letra y se intensifico un poco el color de cada una de las etiquetas del “tipo” de pokemon. Para ello se utilizo como referencia los logos oficiales de Pokemon Go.
+
+![Colores oficiales](IMG/colorEtiqueta.jpg)
 
 3. Al principio se tenia como imagen principal la oficial de Pokemon y esto ocasionaba que las personas relacionaran la pagina de Pokepedia con la marca de pokemon y no a lo que realmente era el fin de la misma; se cambio la imagen actual y se agregó el logo, con este cambio se logró sacar esa idea enfocándose en Pokepedia como pagina informativa.
+
+### Nota: La planificación de este proyecto fue realizada de manera colaborativa  a través de [issues](https://github.com/LeslieSaVa/scl-2018-12-bc-core-data-lovers/issues) 
+
+## Checklist
+
+ - Para la coordinación, el seguimiento y la verificación de que el proyecto cumpla con los elementos más importantes se toman las actividades listadas a continuación:
+
+Usa VanillaJS. [ ✓ ]
+
+No hace uso de this. [ ✓ ]
+
+Pasa linter (npm pretest) [ ✓ ]
+
+Pasa tests (npm test) [ ✓ ]
+
+Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches. [ ✓ ]
+
+Incluye Definición del producto clara e informativa en README [ ✓ ]
+
+Incluye historias de usuario en README [ ✓ ]
+
+Incluye sketch de la solución (prototipo de baja fidelidad) en README [ ✓ ]
+
+Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README [ ✓ ]
+
+Incluye link a Zeplin en README [ N/A ]
+
+Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README [ ✓ ]
+
+UI: Muestra lista y/o tabla con datos y/o indicadores. [ ✓ ]
+
+UI: Permite ordenar data por uno o más campos (asc y desc). [ ✓ ]
+
+UI: Permite filtrar data en base a una condición. [ ✓ ]
