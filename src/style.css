@@ -228,9 +228,11 @@ span.card-title{
 }
 #form-pokemon{
     display: none; 
+    padding: 5% 0; 
 }
 #contact-form{
     display: none;
+    padding: 9% 0;
 }
 #coments-area{
     width: 100%;
@@ -248,13 +250,6 @@ span.card-title{
     background-image: url(IMG/pokebola4.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
-
-}
-#form-pokemon{
-    padding: 10% 0; 
-}
-#contact-form{
-    padding: 9% 0;
 }
 .tables{
     background-color: #bdbdbd ;
@@ -276,7 +271,6 @@ span.card-title{
 #space-footer{
     margin-left: 60px;
 }
-
 .footer-copyright a:hover{
     text-decoration: underline;
 }
