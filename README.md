@@ -194,29 +194,23 @@ Definición de terminado:
 
 Una vez listos los prototipos de alta fidelidad se aplico el test de usabilidad a dos jugadores frecuentes de pokemon y se obtuvo feedback de algunas compañeras lo que permitió realizar las siguiente mejoras:
 
-- Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones; Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon.
-
-***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios.
+- Entrevistado José Rojas: Tiene 3 años siendo jugador de pokemon y ha manifestado que desde un inicio en el juego se le dificultaba encontrar información detallada por cada criatura o por tipo ya que no habían paginas que se encargaran de filtrar de forma fácil y rápida los pokemones; Se le monstró el prototipo y se le dio una tarea para realizar el filtrado y se observa que el usuario se ubico directamente sobre la opción de filtrar y realizo la actividad sin problema, sin embargo, al momento de pedirle que seleccionar o buscara información más detallada de un pokemon en especifico se sintió algo confundido ya que no localizo un botón o algo que instintivamente le indicara que debía hacer para abrir la información ya que en un principio se resaltaba solo la figura del pokemon. También algunas de las etiquetas de los tipos, los colores son muy claros con letras blancas y pequeñas dificultando la lectura.
 
 
-- Entrevistado Alex Sabattin: Tiene 26 años de edad y es un jugador novato pero se ha relacionado anteriormente con las series de pokemon por lo que se le hacen familiar todos los nombres e imágenes. Al presentarle el prototipo y darle las tareas logró manejarlas muy bien, tanto el filtrado y el ordenado de la información. Realizó algunas sugerencia acerca de la información mostrada pero correspondía al manejo de la data previamente cargada en el proyecto.
 
-
-- Feedback de algunas compañeras: En esta actividad ha sido de mucho beneficio en cuanto a que permitió notar lo siguiente:
-
-1. Los colores de fondo según lo manifestaron durante el feedback era muy oscuro lo que ocasionaba un fuerte contraste y que junto al resto de las imágenes resultaba agotador para la vista.
-
-2. En algunas de las etiquetas de los tipos, los colores eran muy claros con letras blancas y pequeñas dificultando la lectura, se mejoró tanto la letra y se intensifico un poco el color de cada una de las etiquetas del “tipo” de pokemon. Para ello se utilizo como referencia los logos oficiales de Pokemon Go.
+***Solución***: Se le aplico un hover a las tarjetas de los pokemones para que al pasar el cursor por encima de cada uno se resalte y sea visualmente mas notorio e intuitivo para todos los usuarios. Por otro lado, se mejoró la letra y se intensificó un poco el color de cada una de las etiquetas del “tipo” de pokemon. Para ello se utilizo como referencia los logos oficiales de Pokemon Go (ver imagen).
 
 ![Colores oficiales](IMG/colorEtiqueta.jpg)
 
-3. Al principio se tenia como imagen principal la oficial de Pokemon y esto ocasionaba que las personas relacionaran la pagina de Pokepedia con la marca de pokemon y no a lo que realmente era el fin de la misma; se cambio la imagen actual y se agregó el logo, con este cambio se logró sacar esa idea enfocándose en Pokepedia como pagina informativa.
+- Entrevistado Alex Sabattin: Tiene 26 años de edad y es un jugador novato pero se ha relacionado anteriormente con las series de pokemon por lo que se le hacen familiar todos los nombres e imágenes. Al presentarle el prototipo y darle las tareas logró manejarlas muy bien, tanto el filtrado y el ordenado de la información. Realizó algunas sugerencia acerca de la información mostrada pero correspondía al manejo de la data previamente cargada en el proyecto. Los colores de fondo son muy oscuros y hacen un fuerte contraste y junto al resto de las imágenes resulta agotador para la vista. La imagen principal hace mucha referencia la marca de pokemon.
+
+***Solución***: Con relación a los colores de fondo se le dio una tonalidad más clara para suavizar y mejorar su aspecto. Al principio se tenia como imagen principal la oficial de Pokemon y esto ocasionaba que las personas relacionaran la pagina de Pokepedia con la marca de pokemon y no a lo que realmente era el fin de la misma; se cambio la imagen actual y se agregó el logo, con este cambio se logró sacar esa idea enfocándose en Pokepedia como pagina informativa.
 
 ### Nota: La planificación de este proyecto fue realizada de manera colaborativa  a través de [issues](https://github.com/LeslieSaVa/scl-2018-12-bc-core-data-lovers/issues) 
 
 ## Checklist
 
- - Para la coordinación, el seguimiento y la verificación de que el proyecto cumpla con los elementos más importantes se toman las actividades listadas a continuación:
+- Para la coordinación, el seguimiento y la verificación del proyecto se toman las actividades listadas a continuación:
 
 Usa VanillaJS. [ ✓ ]
 
