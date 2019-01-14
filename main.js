@@ -238,6 +238,21 @@ document.getElementById("form-pokemon").style.display="none";
 document.getElementById("contact-form").style.display="block";
   })  
  }
+
+ document.addEventListener('DOMContentLoaded', function() {
+   let options = {
+    data: {
+      "Apple": null,
+      "Microsoft": null,
+      "Google": 'https://placehold.it/250x250'
+    },
+   }
+  let elems = document.querySelectorAll('.autocomplete');
+  let instances = M.Autocomplete.init(elems, options);
+});
+
+
+
  window.onload = runData;
 
   
