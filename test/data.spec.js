@@ -50,7 +50,12 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
     //assert.deepStrictEqual comprueba si dos objetos, y sus objetos secundarios, son iguales utilizando el operador ===
     assert.deepStrictEqual([orderA_Z[0].name, orderA_Z[1].name, orderA_Z[2].name, orderA_Z[3].name, orderA_Z[4].name],['Abra','Aerodactyl','Alakazam','Arbok','Arcanine']);
   });
-  
+
+  it('Debería retornar 0 para prev.name === next.name', ()   => {
+    let valueOrderA_Z = window.pokemones.sortData((dataTest, 'prev.name == next.name','az'))
+    assert.That(valueOrderA_Z, is.equalTo(0));
+  });
+  //global.assert.operator
  it('Debería retornar un arreglo de objetos con los pokemones ordenados por name de forma Z-A', ()   => {
 
     let orderZ_A = window.pokemones.sortData(dataTest, 'name','za')
@@ -70,7 +75,11 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
     let numberMenor = window.pokemones.sortData(dataTest, 'num','small-big')
 
     assert.deepStrictEqual([numberMenor[0].id, numberMenor[1].id, numberMenor[2].id, numberMenor[3].id],[1,2,3,4]);
-  });})
+  });
+
+  
+
+})
 
 describe('pokemon.computeStats', () => {
   it('Debería ser una función', () => {

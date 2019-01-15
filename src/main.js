@@ -132,7 +132,8 @@ function clickOnImg (data) {
       })
     }
   }   
-//Manejo de la función filtrar
+
+  //Manejo de la función filtrar
 document.getElementById("select-type-pokemon").addEventListener("change",(evento)=>{
   evento.preventDefault();
   let type = document.getElementById("select-type-pokemon").value;
@@ -211,11 +212,13 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
  function runData () {
    showPokemons(allPokemon.pokemon) 
    clickOnImg(allPokemon.pokemon)
+ }
 //Botón calculadora del menu  navbar
   document.getElementById("calculator-btn").addEventListener("click",()=>{
   document.getElementById("first-page").style.display="none";
   document.getElementById("second-page").style.display="none";
   document.getElementById("contact-form").style.display="none";
+  document.getElementById("four-page").style.display="none";
   document.getElementById("form-pokemon").style.display="block";
 })
 //Botón limpiar calculadora
@@ -235,24 +238,34 @@ document.getElementById("contact-btn").addEventListener("click",()=>{
 document.getElementById("first-page").style.display="none";
 document.getElementById("second-page").style.display="none";
 document.getElementById("form-pokemon").style.display="none";
+document.getElementById("four-page").style.display="none";
 document.getElementById("contact-form").style.display="block";
-  })  
- }
+  }) 
+  
+//Botón Estadistica
+document.getElementById("statistic-btn").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("form-pokemon").style.display="none";
+  document.getElementById("contact-form").style.display="none";
+  document.getElementById("four-page").style.display="block";
+ // let dataChart = window.pokemones.filterData(allPokemon.pokemon,"Grass").length;
+ // console.log(dataChart)
+  let context1 = document.getElementById('myGraphic').getContext('2d');
+  let chart = new Chart(context1, {
+    type: 'bar',
 
- document.addEventListener('DOMContentLoaded', function() {
-   let options = {
     data: {
-      "Apple": null,
-      "Microsoft": null,
-      "Google": 'https://placehold.it/250x250'
-    },
-   }
-  let elems = document.querySelectorAll('.autocomplete');
-  let instances = M.Autocomplete.init(elems, options);
-});
-
+        labels: ["Ground", "Water", "Fire", "Normal", "Psychic", "Dragon", "Flying","Electric", "Ice", "Rock", "Bug", "Grass", "Poison", "Fighting", "Ghost"],
+       datasets: [{
+           label: "Tipos de Pokemon",
+           backgroundColor: ['#8d6e63', '#42a5f5', '#ffa726','#757575','#ef9a9a','#01579b','#9fa8da', '#ffca28', '#80cbc4', '#d7ccc8', '#9ccc65', '#4caf50', '#ba68c8','#d32f2f', '#5c6bc0'],
+          borderColor: '#616161',
+          data: [window.pokemones.filterData(allPokemon.pokemon,"Ground").length, window.pokemones.filterData(allPokemon.pokemon,"Water").length, window.pokemones.filterData(allPokemon.pokemon,"Fire").length, window.pokemones.filterData(allPokemon.pokemon,"Normal").length, window.pokemones.filterData(allPokemon.pokemon,"Psychic").length, window.pokemones.filterData(allPokemon.pokemon,"Dragon").length, window.pokemones.filterData(allPokemon.pokemon,"Flying").length, window.pokemones.filterData(allPokemon.pokemon,"Electric").length, window.pokemones.filterData(allPokemon.pokemon,"Ice").length, window.pokemones.filterData(allPokemon.pokemon,"Rock").length, window.pokemones.filterData(allPokemon.pokemon,"Bug").length, window.pokemones.filterData(allPokemon.pokemon,"Grass").length, window.pokemones.filterData(allPokemon.pokemon,"Poison").length, window.pokemones.filterData(allPokemon.pokemon,"Fighting").length, window.pokemones.filterData(allPokemon.pokemon,"Ground").length]
+      }]
+  }
+})})
 
 
  window.onload = runData;
 
-  
