@@ -3,7 +3,7 @@ global.window = global;
 global.assert  = require('chai').assert;
 require('../src/data/pokemon/pokemon.js');
 require('../src/data');
-require('./data.spec.js');
+//require('./data.spec.js');
 
 //intentando test
 
@@ -13,7 +13,10 @@ describe('pokemon', () => {
   it('Debería ser un objeto', () => {
     assert.equal(typeof window.pokemones, 'object','pokemon es un objeto');
   });
-  
+ // it('Debería dar un error', () => {
+  //  assert.fail(TypeError(window.pokemones), 'string','pokemon es un objeto');
+ // });
+
 //testeo funcion filterData
  describe('pokemon.filterData', () => {
  it('Debería ser una función', () => {
@@ -50,18 +53,19 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
     //assert.deepStrictEqual comprueba si dos objetos, y sus objetos secundarios, son iguales utilizando el operador ===
     assert.deepStrictEqual([orderA_Z[0].name, orderA_Z[1].name, orderA_Z[2].name, orderA_Z[3].name, orderA_Z[4].name],['Abra','Aerodactyl','Alakazam','Arbok','Arcanine']);
   });
-
-  it('Debería retornar 0 para prev.name === next.name', ()   => {
-    let valueOrderA_Z = window.pokemones.sortData((dataTest, 'prev.name == next.name','az'))
-    assert.That(valueOrderA_Z, is.equalTo(0));
-  });
-  //global.assert.operator
+  it('Debería retornar ok para prev.name > next.name', ()   => {
+    assert.ok(window.pokemones.sortData(dataTest, 'higher')[1].name, '>', dataTest[0].name);
+    });                        
  it('Debería retornar un arreglo de objetos con los pokemones ordenados por name de forma Z-A', ()   => {
 
     let orderZ_A = window.pokemones.sortData(dataTest, 'name','za')
 
     assert.deepStrictEqual([orderZ_A[0].name, orderZ_A[1].name, orderZ_A[2].name, orderZ_A[3].name],['Zubat','Zapdos','Wigglytuff','Weezing']);
   });
+
+  it('Debería retornar ok para prev.name < next.name', ()   => {
+    assert.ok(window.pokemones.sortData(dataTest, 'less')[0].name, '<', dataTest[1].name);
+    }); 
 
   it('Debería retornar un arreglo de objetos con los pokemones ordenados por id de big-small', ()   => {
 
@@ -76,11 +80,7 @@ assert.equal(pokemonesGrass, 'Bulbasaur')
 
     assert.deepStrictEqual([numberMenor[0].id, numberMenor[1].id, numberMenor[2].id, numberMenor[3].id],[1,2,3,4]);
   });
-
-  
-
 })
-
 describe('pokemon.computeStats', () => {
   it('Debería ser una función', () => {
    assert.equal(typeof window.pokemones.computeStats,'function');
@@ -96,6 +96,10 @@ it('Deberia retornar 12 para la cantidad de pokemon de tipo fuego', ()=>{
      });  
 
 })})
+
+
+
+
 //guardando
 //const dataOrderTest = [
 // {
