@@ -18,8 +18,15 @@ window.pokemones = {
   })
   return pokemonResultFilter
  },
+ searchData: (data,searching) => {
+  const dataPokemon = data;
+  const pokemonResultSearch = dataPokemon.filter(pokemon => {
+    return (pokemon.name.indexOf(searching) !== -1);
+  })
+  return pokemonResultSearch
+ },
 
-sortData: (data, sortBy, sortOrder) => {
+ sortData: (data, sortBy, sortOrder) => {
   const dataPokemon = data
   if (sortBy === "name" && sortOrder === "az"){
     dataPokemon.sort((prev, next)=> {
