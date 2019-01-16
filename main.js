@@ -140,6 +140,7 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
       showPokemons(window.pokemones.filterData(allPokemon.pokemon,type));
       clickOnImg(window.pokemones.filterData(allPokemon.pokemon,type));
  })
+
 //visualización de la data como array para función filter
   function showPokemons(data){
     content.innerHTML="";
@@ -163,7 +164,16 @@ document.getElementById("select-type-pokemon").addEventListener("change",(evento
       }
       }
   }
-  //Manejo de la función ordenar
+//Manejo de la función Buscar
+document.getElementById("search-input").addEventListener("keydown",(evento)=>{
+  if(evento.keyCode === 13){
+    let nameSearch = document.getElementById("search-input").value;
+    showPokemons(window.pokemones.searchData(allPokemon.pokemon,nameSearch));
+    clickOnImg(window.pokemones.searchData(allPokemon.pokemon,nameSearch));
+  }
+})
+
+//Manejo de la función ordenar
   document.getElementById("option-order").addEventListener("change", () => {
     document.getElementById("result-sum").innerHTML = "";
     content.innerHTML = "";
@@ -252,7 +262,7 @@ document.getElementById("statistic-btn").addEventListener("click",()=>{
  // let dataChart = window.pokemones.filterData(allPokemon.pokemon,"Grass").length;
  // console.log(dataChart)
   let context1 = document.getElementById('myGraphic').getContext('2d');
-  let chart = new Chart(context1, {
+  new window.Chart(context1, {
     type: 'bar',
 
     data: {
