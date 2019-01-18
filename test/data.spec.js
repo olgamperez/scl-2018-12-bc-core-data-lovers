@@ -14,11 +14,11 @@ describe('pokemon', () => {
     assert.equal(typeof window.pokemones, 'object','pokemon es un objeto');
   });
   it('No debería no ser igual a un string', () => {
-    assert.notEqual(typeof window.pokemones, 'string', 'No es un string');
+assert.notEqual(typeof window.pokemones, ('string'));
 });
 
 it('Deberia ser un array', () => {
-  Array.isArray(window.pokemones);
+ window.pokemones instanceof Array;
 });
 
 
