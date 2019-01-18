@@ -30,7 +30,7 @@
                </li>
                <li><a href="#" id="contact-btn">Contacto</a>
                </li>
-               <li><input type="text" id="search-input" placeholder="Buscar.."></li>
+               <!--<li><input type="text" id="search-input" placeholder="Buscar.."></li>-->
             </ul>
             <ul class="sidenav" id="menu-responsive">
                <li><a id="back-to-initial-responsive" href="#">Inicio</a>
@@ -64,7 +64,7 @@
          </header>
          <div id="container1" class="container">
             <div class="row">
-               <div id="select-pokemon" class="col s12 m6">
+               <div id="select-pokemon" class="col s12 m3">
                   <select id="select-type-pokemon">
                      <option value="">Elige Tipo de Pokemon</option>
                      <option value="Ground">Tierra</option>
@@ -87,7 +87,7 @@
                      <option value="Fairy">Hada</option>
                   </select>
                </div>
-               <div id="select-type-order" class="col s12 m6">
+               <div id="select-type-order" class="col s12 m3">
                   <select id="option-order">
                      <option value="">Ordenar por</option>
                      <option value="az">A - Z</option>
@@ -95,21 +95,17 @@
                      <option value="small-big">Número inferior</option>
                      <option value="big-small">Número superior</option>
                   </select>
-                  <br>
                </div>
+                     <div class="col s12 m3">
+                              <div id="search" class="input-field col s12 offset-m3">
+                                 <span class="icon"><i class="fa fa-search"></i></span>
+                                  <input type="text" id="search-input" placeholder="Buscar..">
+                                </div>
+                     </div>
+                  <br>
                <div id="result-sum"></div>
             </div>
-           <!-- <div class="row">
-               <div class="col s12">
-                  <div class="row">
-                     <div class="input-field col s12">
-                        <div id="search" class="input-field col s3 offset-s6">
-                            <input type="text" id="search-input" placeholder="&#xF002; Buscar..">
-                          </div>
-                     </div>
-                  </div>
-               </div>
-            </div>-->
+            
             <div id="content" class="row"></div>
          </div>
          <div class="row">
