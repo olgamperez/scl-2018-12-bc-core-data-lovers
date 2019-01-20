@@ -25,15 +25,14 @@ body{
       color: #FFF;
       text-shadow: 1px 1px 1px #333;
   }
-  h1 {
+  h1, h2 {
       font-family: 'Open Sans', sans-serif;
       color: #f5f5f5;
       font-size: 4rem;
   }
+  
   h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    color: #f5f5f5; 
+    font-size: 2rem; 
   }
   #container1{
       padding: 3% 0;
