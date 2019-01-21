@@ -24,6 +24,14 @@ document.getElementById("contact-btn-responsive").addEventListener("click",()=>{
   document.getElementById("form-pokemon").style.display="none";
   document.getElementById("contact-form").style.display="block";
 })  
+//Botón Estadistica responsive
+document.getElementById("statistic-btn-responsive").addEventListener("click",()=>{
+  document.getElementById("first-page").style.display="none";
+  document.getElementById("second-page").style.display="none";
+  document.getElementById("form-pokemon").style.display="none";
+  document.getElementById("contact-form").style.display="none";
+  document.getElementById("four-page").style.display="block";
+}) 
 //Manejo del cálculo 
 document.getElementById("select-type-pokemon").addEventListener("change", () => {
   document.getElementById("result-sum").innerHTML = "";
